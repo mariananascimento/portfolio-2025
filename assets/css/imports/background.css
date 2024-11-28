@@ -1,0 +1,111 @@
+
+.background {
+  background: var(--color-background);
+  inset: 0;
+  position: fixed;
+  z-index: 0;
+}
+
+.background::after {
+  background-image: url(/assets/images/noise.png);
+  background-size: 288px;
+  content: "";
+  display: block;
+  inset: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+.circles {
+  align-items: center;
+  animation-direction: alternate;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  backface-visibility: hidden;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.circle {
+  animation-iteration-count: infinite;
+  aspect-ratio: 1;
+  backface-visibility: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  filter: blur(calc(var(--radius) * 0.333));
+  margin: calc(var(--radius) * -0.5);
+  mix-blend-mode: soft-light;
+  opacity: 1;
+  position: relative;
+  transition: opacity 1s;
+  width: calc(var(--radius) * 2);
+}
+
+.circle.design {
+  animation-direction: alternate;
+  animation-duration: 6s;
+  animation-name: float;
+  background: var(--color-design);
+}
+
+.circle.research {
+  animation-direction: alternate-reverse;
+  animation-duration: 8s;
+  animation-name: float;
+  background: var(--color-research);
+}
+
+.circle.data {
+  animation-delay: -3s;
+  animation-direction: alternate-reverse;
+  animation-duration: 12s;
+  animation-name: float;
+  background: var(--color-data);
+}
+
+.foreground {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes float {
+  0% {
+    scale: 1;
+    translate: calc(var(--radius) * 0);
+  }
+  20% {
+    scale: 1.25;
+    translate: calc(var(--radius) * 0.5);
+  }
+  40% {
+    scale: 1;
+    translate: calc(var(--radius) * 1);
+  }
+  60% {
+    scale: 1.25;
+    translate: calc(var(--radius) * 1.5);
+  }
+  80% {
+    scale: 1.5;
+    translate: calc(var(--radius) * 0.5);
+  }
+  100% {
+    scale: 1;
+    translate: calc(var(--radius) * 0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
