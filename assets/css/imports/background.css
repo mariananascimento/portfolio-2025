@@ -12,6 +12,7 @@
   content: "";
   display: block;
   inset: 0;
+  pointer-events: none;
   position: fixed;
   z-index: 2;
 }
@@ -22,7 +23,9 @@
   animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-name: rotate;
+  animation-timing-function: ease-in-out;
   backface-visibility: hidden;
+  border-radius: 50%;
   display: flex;
   inset: 0;
   justify-content: center;
@@ -34,31 +37,84 @@
   animation-iteration-count: infinite;
   aspect-ratio: 1;
   backface-visibility: hidden;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-radius: 50%;
-  filter: blur(calc(var(--radius) * 0.333));
   margin: calc(var(--radius) * -0.5);
   mix-blend-mode: soft-light;
   opacity: 1;
   position: relative;
-  transition: opacity 1s;
   width: calc(var(--radius) * 2);
+  z-index: 1;
+}
+
+.circle:hover {
+  /* z-index: 2; */
+}
+
+.circle::before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  filter: blur(calc(var(--radius) * 0.4));
+  inset: 0;
+  position: absolute;
+  transition: filter .8s;
+}
+
+.circle:hover::before {
+  filter: blur(calc(var(--radius) * 0.1));
+}
+
+.circle::after {
+  align-items: center;
+  animation-direction: alternate-reverse;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+  content: attr(data-label);
+  display: flex;
+  font-size: calc(var(--radius) * 0.2);
+  inset: 0;
+  justify-content: center;
+  letter-spacing: .25em;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-transform: uppercase;
+  transition: opacity .4s;
+  z-index: 3;
+}
+
+.circle:hover::after {
+  /* opacity: 1; */
 }
 
 .circle.design {
   animation-direction: alternate;
   animation-duration: 6s;
   animation-name: float;
-  background: var(--color-design);
+
+  &::before {
+    background: var(--color-design);
+  }
+
+  &::after {
+    color: var(--color-design);
+  }
 }
 
 .circle.research {
   animation-direction: alternate-reverse;
   animation-duration: 8s;
   animation-name: float;
-  background: var(--color-research);
+  
+  &::before {
+    background: var(--color-research);
+  }
+
+  &::after {
+    color: var(--color-research);
+  }
 }
 
 .circle.data {
@@ -66,7 +122,14 @@
   animation-direction: alternate-reverse;
   animation-duration: 12s;
   animation-name: float;
-  background: var(--color-data);
+
+  &::before {
+    background: var(--color-data);
+  }
+
+  &::after {
+    color: var(--color-data);
+  }
 }
 
 .foreground {
@@ -80,7 +143,7 @@
     translate: calc(var(--radius) * 0);
   }
   20% {
-    scale: 1.25;
+    scale: 1.125;
     translate: calc(var(--radius) * 0.5);
   }
   40% {
@@ -88,11 +151,11 @@
     translate: calc(var(--radius) * 1);
   }
   60% {
-    scale: 1.25;
+    scale: 1.125;
     translate: calc(var(--radius) * 1.5);
   }
   80% {
-    scale: 1.5;
+    scale: 1.25;
     translate: calc(var(--radius) * 0.5);
   }
   100% {

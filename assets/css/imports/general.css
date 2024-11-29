@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background: var(--color-background);
+}
+
 body {
   background: var(--color-background);
-  font-family: sans-serif;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
   overflow-x: hidden;
+  font-size: 24px;
+  line-height: 1.5;
 }
