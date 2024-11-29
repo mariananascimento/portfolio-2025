@@ -1,0 +1,19 @@
+.cursor {
+  aspect-ratio: 1;
+  background: var(--color-design);
+  border-radius: 50%;
+  left: 0px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  position: fixed;
+  scale: .5;
+  top: 0px;
+  transition: scale .4s;
+  translate: -50% -50%;
+  width: 144px;
+  z-index: 999;
+}
+
+.cursor[data-state="interactive"] {
+  scale: 1;
+}

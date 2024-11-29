@@ -6,6 +6,7 @@
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/scripts.js" type="module"></script>
   </head>
   <body>
     {% include nav.html %}
@@ -14,5 +15,7 @@
     <p>{{ page.description }}</p>
 
     {{ page.content | markdownify }}
+
+    {% include cursor.html %}
   </body>
 </html>
