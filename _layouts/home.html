@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -18,12 +21,33 @@
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
   
-      <ul>
-        {% for page in site.pages %}
+      <ul class="works">
+
+        {% assign pages = site.pages | sort: "order" %}
+
+        {% for page in pages %}
           {% if page.path contains 'work/' %}
-          <li>
-            <a href="{{ page.url }}">{{ page.title }}</a>
-          </li>
+
+            {% if page.status == 'published' %}
+            <li data-status="{{ page.status }}">
+              <a href="{{ page.url }}">
+                <h2>
+                  {{ page.title }}
+                </h2>
+                <p>{{ page.description }}</p>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if page.status == 'coming soon' %}
+            <li data-status="{{ page.status }}">
+              <h2>
+                {{ page.title }}
+              </h2>
+              <p>{{ page.description }}</p>
+            </li>
+            {% endif %}
+
           {% endif %}
         {% endfor %}
       </ul>
