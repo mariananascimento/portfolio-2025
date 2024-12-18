@@ -1,19 +1,48 @@
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
 .cursor {
+  animation: spin 3s linear infinite;
   aspect-ratio: 1;
-  background: var(--color-design);
+  /* background: var(--color-design); */
   border-radius: 50%;
   left: 0px;
   mix-blend-mode: multiply;
   pointer-events: none;
   position: fixed;
-  scale: .5;
+  scale: .333;
   top: 0px;
-  transition: scale .4s;
+  transition: scale .4s, background-color .2s;
   translate: -50% -50%;
   width: 144px;
   z-index: 999;
 }
 
+.cursor::before {
+  align-items: center;
+  content: "View";
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: spin 3s linear infinite reverse;
+  transition: opacity .4s;
+}
+
+.cursor[data-state="default"] {
+  background: lightgray !important;
+}
+
 .cursor[data-state="interactive"] {
   scale: 1;
+}
+
+.cursor[data-state="interactive"]::before {
+  opacity: 1;
 }

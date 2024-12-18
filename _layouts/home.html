@@ -21,6 +21,15 @@
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
   
+
+      <a href="#" data-tags="research">Research</a>
+      <a href="#" data-tags="data">Data</a>
+      <a href="#" data-tags="design">Design</a>
+
+      <a href="#" data-tags="research+design">Research + Design</a>
+      <a href="#" data-tags="research+data">Research + Data</a>
+      <a href="#" data-tags="design+data">Design + Data</a>
+
       <ul class="works">
 
         {% assign pages = site.pages | sort: "order" %}
