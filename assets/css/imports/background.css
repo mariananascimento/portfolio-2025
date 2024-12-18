@@ -7,6 +7,7 @@
 }
 
 .background::after {
+  backdrop-filter: blur(calc(var(--radius) * 0.4));
   background-image: url(/assets/images/noise.png);
   background-size: 288px;
   content: "";
@@ -25,7 +26,6 @@
   animation-name: rotate;
   animation-timing-function: ease-in-out;
   backface-visibility: hidden;
-  border-radius: 50%;
   display: flex;
   inset: 0;
   justify-content: center;
@@ -53,15 +53,15 @@
   border-radius: 50%;
   content: "";
   display: block;
-  filter: blur(calc(var(--radius) * 0.4));
+  /* filter: blur(calc(var(--radius) * 0.4)); */
   inset: 0;
   position: absolute;
   transition: filter .8s;
 }
 
-.circle:hover::before {
+/* .circle:hover::before {
   filter: blur(calc(var(--radius) * 0.1));
-}
+} */
 
 .circle::after {
   align-items: center;
