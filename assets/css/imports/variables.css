@@ -2,9 +2,22 @@
   --color-design: #ff906c;
   --color-research: #ec75ff;
   --color-data: #b2d3ff;
+
+  --color-tint: #2b2222;
+  --color-paper: #ffffff;
   --color-background: #edecff;
+  --color-subtle: color-mix(in srgb, var(--color-background), var(--color-paper)); 
   
+  /* Blurred circles */
   --radius: 240px;
+
+  /* For 12 columns */
+  --margin: 48px;
+  --gutter: 24px;
+  --max-width: 1440px;
+
+  /* Fixed-size components */
+  --nav-height: 96px;
 }
 
 /* linear-gradient(in lab, #9CBCFc, #ff906c) */

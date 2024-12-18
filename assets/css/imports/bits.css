@@ -1,0 +1,16 @@
+.bits {
+  align-items: baseline;
+  border-top: 2px solid currentColor;
+  justify-content: space-between;
+  padding-block: var(--margin);
+}
+
+.bits > p, .bits > a {
+  font-size: 75%;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bits > a {
+  font-weight: bold;
+}

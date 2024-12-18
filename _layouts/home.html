@@ -16,50 +16,15 @@
     
     <div class="foreground">
       
-      {% include nav.html %}
-
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
+      {% include cover.html %}
+      {% include work.html %}
   
-
-      <a href="#" data-tags="research">Research</a>
+      <!-- <a href="#" data-tags="research">Research</a>
       <a href="#" data-tags="data">Data</a>
       <a href="#" data-tags="design">Design</a>
-
       <a href="#" data-tags="research+design">Research + Design</a>
       <a href="#" data-tags="research+data">Research + Data</a>
-      <a href="#" data-tags="design+data">Design + Data</a>
-
-      <ul class="works">
-
-        {% assign pages = site.pages | sort: "order" %}
-
-        {% for page in pages %}
-          {% if page.path contains 'work/' %}
-
-            {% if page.status == 'published' %}
-            <li data-status="{{ page.status }}">
-              <a href="{{ page.url }}">
-                <h2>
-                  {{ page.title }}
-                </h2>
-                <p>{{ page.description }}</p>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if page.status == 'coming soon' %}
-            <li data-status="{{ page.status }}">
-              <h2>
-                {{ page.title }}
-              </h2>
-              <p>{{ page.description }}</p>
-            </li>
-            {% endif %}
-
-          {% endif %}
-        {% endfor %}
-      </ul>
+      <a href="#" data-tags="design+data">Design + Data</a> -->
   
       {{ page.content | markdownify }}
 

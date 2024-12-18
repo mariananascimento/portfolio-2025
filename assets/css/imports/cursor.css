@@ -40,6 +40,7 @@
 }
 
 .cursor[data-state="interactive"] {
+  background: var(--color-background);
   scale: 1;
 }
 

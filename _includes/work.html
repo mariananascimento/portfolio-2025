@@ -1,0 +1,45 @@
+<section id="work">
+
+  <div class="grid">
+    <h2>Selected Works</h2>
+  </div>
+
+  <ul class="grid">
+    {% assign pages = site.pages | sort: "order" %}
+
+    {% for page in pages %}
+      {% if page.path contains 'work/' %}
+
+        {% if page.status == 'published' %}
+          <li data-status="{{ page.status }}">
+            <a href="{{ page.url }}" class="card">
+              <img src="{{ page.thumb }}" alt="">
+              <h3>
+                {{ page.title }}
+
+                {% if page.password %}
+                  {% include lock.svg %}
+                {% endif %}
+              </h3>
+              <time datetime="{{ page.year }}">{{ page.year }}</time>
+              <p>{{ page.description }}</p>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if page.status == 'coming soon' %}
+          <li data-status="{{ page.status }}" class="card">
+            <img src="{{ page.thumb }}" alt="">
+            <h3>
+              {{ page.title }}
+            </h3>
+            <time datetime="{{ page.year }}">{{ page.year }}</time>
+            <p>{{ page.description }}</p>
+          </li>
+        {% endif %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</section>

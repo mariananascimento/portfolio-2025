@@ -1,0 +1,51 @@
+#work {
+  background: var(--color-paper);
+}
+
+#work h2 {
+  grid-column: span 12;
+  margin-block: var(--margin);
+}
+
+#work ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#work li {
+  width: fit-content;
+  grid-column: span 6;
+  margin-bottom: var(--gutter);
+}
+
+#work a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+#work img {
+  width: 100%;
+  margin-bottom: calc(var(--gutter) * .5);
+}
+
+#work time {
+  text-align: right;
+  width: 4rem;
+}
+
+#work h3 {
+  margin: 0;
+  width: calc(100% - 4rem);
+}
+
+#work p {
+  margin: 0;
+}
+
+#work .card {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: justify;
+}

@@ -1,0 +1,13 @@
+.cover {
+  height: calc(100svh - var(--margin));
+  height: 100svh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  height: calc(100% - var(--nav-height));
+  justify-content: end;
+}
+

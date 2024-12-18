@@ -1,0 +1,27 @@
+nav {
+  align-items: center;
+  height: var(--nav-height);
+  /* align-items: center; */
+}
+
+nav a {
+  height: fit-content;
+  
+  padding: calc(var(--gutter) * .25) calc(var(--gutter) * .5);
+  text-decoration: none;
+}
+
+nav > a {
+  grid-column: span 3;
+  margin-left: calc(var(--gutter) * -.5);
+}
+
+nav .anchors {
+  display: flex;
+  font-size: 75%;
+  gap: calc(var(--gutter) * .5);
+  grid-column: span 9;
+  justify-content: right;
+  margin-right: calc(var(--gutter) * -.5);
+  text-transform: uppercase;
+}

@@ -1,20 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:opsz,wght@14..32,100..900&display=swap);
+
 @import url(imports/reset.css);
 @import url(imports/variables.css);
 @import url(imports/general.css);
+@import url(imports/grid.css);
+@import url(imports/flex.css);
 @import url(imports/background.css);
 @import url(imports/foreground.css);
-@import url(imports/works.css);
+@import url(imports/cover.css);
+@import url(imports/nav.css);
+@import url(imports/header.css);
+@import url(imports/bits.css);
+@import url(imports/work.css);
 @import url(imports/cursor.css);
 
 
-a[data-tags] {
+/* a[data-tags] {
   padding: 2em 2em;
   background: white;
   display: inline-block;
   margin: 1em;
   color: inherit;
   text-decoration: none;
-}
+} */
 
 /*
 @import url(imports/loading.css);
