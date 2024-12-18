@@ -36,7 +36,7 @@
 }
 
 .cursor[data-state="default"] {
-  background: lightgray !important;
+  background: var(--color-background) !important;
 }
 
 .cursor[data-state="interactive"] {
