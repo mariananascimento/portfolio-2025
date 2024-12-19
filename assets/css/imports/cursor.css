@@ -23,16 +23,17 @@
 
 .cursor::before {
   align-items: center;
-  content: "View";
+  animation: spin 3s linear infinite reverse;
+  content: attr(data-text);
   display: flex;
   inset: 0;
   justify-content: center;
+  opacity: 0;
   pointer-events: none;
   position: absolute;
+  scale: 0;
   text-transform: uppercase;
-  opacity: 0;
-  animation: spin 3s linear infinite reverse;
-  transition: opacity .4s;
+  transition: opacity .4s, scale .2s;
 }
 
 .cursor[data-state="default"] {
@@ -46,4 +47,5 @@
 
 .cursor[data-state="interactive"]::before {
   opacity: 1;
+  scale: 1;
 }

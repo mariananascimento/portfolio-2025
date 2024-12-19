@@ -1,22 +1,26 @@
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector(".cursor")
+// const interactives = document.querySelectorAll('a, button')
+
 
 function color(name) {
   return `var(--color-${name})`
 }
 
 function gradient(from, to) {
-  return `linear-gradient(in lab, ${ color(from)}, ${color(to)} )`;
+  return `linear-gradient(in lab, ${ color(from)}, ${color(to)} )`
 }
 
 function moveCursor(event) {
-  cursor.style.top = event.y + "px";
-  cursor.style.left = event.x + "px";
+  cursor.style.top = event.y + "px"
+  cursor.style.left = event.x + "px"
   
-  const interactive = event.target.closest('a, button');
+  const interactive = event.target.closest('a, button')
 
   if (interactive) {
-    setCursor('interactive')
-    colorCursor(interactive.dataset.tags)
+    const {text, tags} = interactive.dataset
+
+    setCursor('interactive', text)
+    colorCursor(tags)
   } else {
     setCursor('default')
   }
@@ -25,26 +29,38 @@ function moveCursor(event) {
 }
 
 function showCursor() {
-  cursor.hidden = false;
+  cursor.hidden = false
 }
 
 function hideCursor() {
-  cursor.hidden = true;
+  cursor.hidden = true
 }
 
-function setCursor(state) {
-  cursor.dataset.state = state;
+function setCursor(state, text = '') {
+  cursor.dataset.state = state
+
+  // const delay = text === '' ? 200 : 0
+
+  // clearTimeout(timeout)
+
+  // timeout = setTimeout(() => {
+    cursor.dataset.text = text
+  // }, delay)
 }
 
-function colorCursor(tagString) {
-  if (!tagString) return;
+function colorCursor(tagsString) {
+  if (!tagsString) return
 
-  const tags = tagString.split('+').map(tag => tag.trim());
-  const [from, to] = tags;
+  const tags = tagsString.split('+').map(tag => tag.trim())
+  const [from, to] = tags
 
-  cursor.style.backgroundColor = color(from);
-  cursor.style.backgroundImage = to ? gradient(from,to) : 'none';
+  cursor.style.backgroundColor = color(from)
+  cursor.style.backgroundImage = to ? gradient(from,to) : 'none'
 }
 
-document.onmousemove = moveCursor;
-document.onmouseleave = hideCursor;
+document.onmousemove = moveCursor
+document.onmouseleave = hideCursor
+
+// interactives.forEach( interactive => {
+//   document.onmouseenter = ()
+// })

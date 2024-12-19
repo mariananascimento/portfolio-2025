@@ -1,26 +1,26 @@
 .bits {
-  position: relative;
   align-items: baseline;
   font-size: 16px;
   font-weight: 500;
   justify-content: space-between;
   padding-block: 24px 64px;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .bits::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
   background-color: var(--color-tint);
+  content: "";
+  height: 1px;
+  left: 0;
   opacity: .3;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.bits > p, .bits > a {
+.bits p {
   margin: 0;
-  text-transform: uppercase;
 }
 
 .bits > a {

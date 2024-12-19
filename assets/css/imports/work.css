@@ -9,13 +9,13 @@
 
 #work ul {
   list-style-type: none;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 var(--margin) 0;
 }
 
 #work li {
   grid-column: span 6;
   margin-bottom: var(--gutter);
-  width: fit-content;
 }
 
 #work a {
@@ -30,13 +30,46 @@
 }
 
 #work time {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .5;
   text-align: right;
-  width: 4rem;
+  text-transform: uppercase;
+  /* width: 4rem; */
 }
 
 #work h3 {
   margin: 0;
-  width: calc(100% - 4rem);
+  width: 100%;
+  /* width: calc(100% - 4rem); */
+}
+
+#work h3 span {
+  align-items: baseline;
+  display: flex;
+}
+
+#work h3 svg {
+  align-self: baseline;
+  display: inline-flex;
+  margin-inline: .5em;
+}
+
+#work h3 span:first-child {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: .5em;
+  /* opacity: .5; */
+  text-transform: uppercase;
+}
+
+#work h3 span:last-child {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  /* opacity: .5; */
 }
 
 #work p {
@@ -53,6 +86,6 @@
 }
 
 #work figcaption {
-  display: flex;
   align-items: baseline;
+  display: flex;
 }
