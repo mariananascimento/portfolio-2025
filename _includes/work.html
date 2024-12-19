@@ -12,7 +12,7 @@
 
         {% if page.status == 'published' %}
           <li data-status="{{ page.status }}">
-            <a href="{{ page.url }}" class="card" data-text="view">
+            <a href="{{ page.url }}" class="card" data-text="view" data-tags="{{page.tags}}">
               <figure>
                 <img src="{{ page.thumb }}" alt="">
                 <figcaption>

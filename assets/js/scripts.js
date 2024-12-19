@@ -23,6 +23,7 @@ function moveCursor(event) {
     colorCursor(tags)
   } else {
     setCursor('default')
+    colorCursor()
   }
 
   showCursor()
@@ -49,9 +50,14 @@ function setCursor(state, text = '') {
 }
 
 function colorCursor(tagsString) {
-  if (!tagsString) return
+  if (!tagsString) {
+    cursor.style.backgroundColor = 'var(--color-background)'
+    cursor.style.backgroundImage = 'none'
+    return
+  }
 
-  const tags = tagsString.split('+').map(tag => tag.trim())
+  const tags = tagsString.split(',').map(tag => tag.trim())
+
   const [from, to] = tags
 
   cursor.style.backgroundColor = color(from)

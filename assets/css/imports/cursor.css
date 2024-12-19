@@ -7,6 +7,7 @@
 .cursor {
   animation: spin 3s linear infinite;
   aspect-ratio: 1;
+  backdrop-filter: blur(4px);
   /* background: var(--color-design); */
   border-radius: 50%;
   left: 0px;
@@ -17,15 +18,18 @@
   top: 0px;
   transition: scale .4s, background-color .2s;
   translate: -50% -50%;
-  width: 144px;
+  width: 96px;
   z-index: 999;
 }
 
 .cursor::before {
   align-items: center;
   animation: spin 3s linear infinite reverse;
+  /* color: var(--color-paper); */
   content: attr(data-text);
   display: flex;
+  font-size: 16px;
+  font-weight: 500;
   inset: 0;
   justify-content: center;
   opacity: 0;
