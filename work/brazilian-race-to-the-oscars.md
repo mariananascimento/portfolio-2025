@@ -1,8 +1,8 @@
 ---
 layout: case
-order: 5
-heading: Nubank
-subheading: Creating a new credit card experience for heavy spenders customers
+order: 7
+heading: Brazilian Race to the Oscars
+subheading: Stages a movie must go through to win a category
 thumb: https://placehold.co/640x640/f5f5ff/edecff/png
 year: 2024
 status: coming soon

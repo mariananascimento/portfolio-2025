@@ -1,10 +1,10 @@
 ---
 layout: case
 order: 6
-title: Iti
-description: Elevating financial health through bank's save money buckets
+heading: Work & Co
+subheading: Elevating financial health through bank’s save money buckets
 thumb: https://placehold.co/640x640/f5f5ff/edecff/png
-year: 2024
+year: 2021
 status: published
 password: abc123
 ---

@@ -13,9 +13,9 @@
 }
 
 #work li {
-  width: fit-content;
   grid-column: span 6;
   margin-bottom: var(--gutter);
+  width: fit-content;
 }
 
 #work a {
@@ -25,8 +25,8 @@
 }
 
 #work img {
-  width: 100%;
   margin-bottom: calc(var(--gutter) * .5);
+  width: 100%;
 }
 
 #work time {
@@ -44,8 +44,15 @@
 }
 
 #work .card {
-  align-items: baseline;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: justify;
+  flex-direction: column;
+}
+
+#work figure {
+  margin: 0;
+}
+
+#work figcaption {
+  display: flex;
+  align-items: baseline;
 }

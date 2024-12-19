@@ -13,28 +13,52 @@
         {% if page.status == 'published' %}
           <li data-status="{{ page.status }}">
             <a href="{{ page.url }}" class="card">
-              <img src="{{ page.thumb }}" alt="">
-              <h3>
-                {{ page.title }}
+              <figure>
+                <img src="{{ page.thumb }}" alt="">
+                <figcaption>
 
-                {% if page.password %}
-                  {% include lock.svg %}
-                {% endif %}
-              </h3>
-              <time datetime="{{ page.year }}">{{ page.year }}</time>
-              <p>{{ page.description }}</p>
+                  <h3>
+                    <span class="heading">
+                      {{ page.heading }}
+                      {% if page.password %}
+                        {% include lock.svg %}
+                      {% endif %}
+                    </span>
+                    <span class="subheading">
+                      {{ page.subheading }}
+                    </span>
+                  </h3>
+
+                  <time datetime="{{ page.year }}">
+                    {{ page.year }}
+                  </time>
+
+                </figcaption>
+              </figure>
             </a>
           </li>
         {% endif %}
 
         {% if page.status == 'coming soon' %}
           <li data-status="{{ page.status }}" class="card">
-            <img src="{{ page.thumb }}" alt="">
-            <h3>
-              {{ page.title }}
-            </h3>
-            <time datetime="{{ page.year }}">{{ page.year }}</time>
-            <p>{{ page.description }}</p>
+            <figure>
+              <img src="{{ page.thumb }}" alt="">
+              <figcaption>
+
+                <h3>
+                  <span class="heading">
+                    {{ page.heading }}
+                  </span>
+                  <span class="subheading">
+                    {{ page.subheading }}
+                  </span>
+                </h3>
+
+                <time datetime="{{ page.year }}">
+                  {{ page.year }}
+                </time>
+              </figcaption>
+            </figure>
           </li>
         {% endif %}
 

@@ -18,10 +18,11 @@ nav > a {
 
 nav .anchors {
   display: flex;
-  font-size: 75%;
+  font-size: 18px;
   gap: calc(var(--gutter) * .5);
   grid-column: span 9;
   justify-content: right;
   margin-right: calc(var(--gutter) * -.5);
   text-transform: uppercase;
+  font-weight: 500;
 }

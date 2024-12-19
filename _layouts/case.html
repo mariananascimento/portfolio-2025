@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }} | {{ site.title }}</title>
+
+    {% assign title = page.title | default: page.heading %}
+    <title>{{ title }} • {{ site.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/scripts.js" type="module"></script>
@@ -11,7 +13,7 @@
   <body>
     {% include nav.html %}
 
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.heading }}</h1>
     <p>{{ page.description }}</p>
 
     {{ page.content | markdownify }}

@@ -9,15 +9,18 @@ body {
   font-family: Inter, sans-serif;
   font-optical-sizing: auto;
   font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.4;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', serif;
   font-weight: normal;
+  line-height: 1.2;
 }
 
 a {
