@@ -1,5 +1,7 @@
 #work {
   background: var(--color-paper);
+  display: flex;
+  flex-direction: column;
 }
 
 #work h2 {
@@ -45,12 +47,12 @@
 }
 
 #work h3 span {
-  align-items: baseline;
+  align-items: center;
   display: flex;
 }
 
 #work h3 svg {
-  align-self: baseline;
+  align-self: center;
   display: inline-flex;
   /* fill: color-mix(in srgb, var(--color-tint) 50%, transparent 50%); */
   margin-inline: .5em;
@@ -76,7 +78,8 @@
 }
 
 #work h3 small {
-  background: var(--color-background);
+  background: var(--color-paper);
+  border: 1px solid color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   border-radius: 4px;
   color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-size: 12px;

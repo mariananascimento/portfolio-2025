@@ -1,5 +1,7 @@
 .cover {
-  height: calc(100svh - var(--margin));
+  display: flex;
+  flex-direction: column;
+  /* height: calc(100svh - var(--margin)); */
   height: 100svh;
 }
 
