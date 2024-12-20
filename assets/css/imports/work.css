@@ -30,9 +30,9 @@
 }
 
 #work time {
+  color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-size: 16px;
   font-weight: 500;
-  opacity: .5;
   text-align: right;
   text-transform: uppercase;
   /* width: 4rem; */
@@ -52,15 +52,18 @@
 #work h3 svg {
   align-self: baseline;
   display: inline-flex;
+  /* fill: color-mix(in srgb, var(--color-tint) 50%, transparent 50%); */
   margin-inline: .5em;
+  /* fill: var(--color-background); */
 }
 
 #work h3 span:first-child {
+  /* opacity: .5; */
+  color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-family: Inter, sans-serif;
   font-size: 16px;
-  font-weight: 700;
-  margin-bottom: .5em;
-  /* opacity: .5; */
+  font-weight: 500;
+  margin-bottom: .25em;
   text-transform: uppercase;
 }
 
@@ -70,6 +73,16 @@
   font-weight: 500;
   /* text-transform: uppercase; */
   /* opacity: .5; */
+}
+
+#work h3 small {
+  background: var(--color-background);
+  border-radius: 4px;
+  color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+  font-size: 12px;
+  margin-inline: 1em;
+  padding: .333em .5em .25em;
+  white-space: nowrap
 }
 
 #work p {
