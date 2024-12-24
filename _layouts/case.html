@@ -16,7 +16,17 @@
     <h1>{{ page.heading }}</h1>
     <p>{{ page.description }}</p>
 
+    {% if page.password %}
+      {% include password-form.html %}
+      <div id="protected" hidden>
+    {% endif %}
+    
     {{ page.content | markdownify }}
+
+    {% if page.password %}
+      </div>
+      {% include password-check.html %}
+    {% endif %}
 
     {% include cursor.html %}
   </body>
