@@ -2,6 +2,8 @@
   background: var(--color-paper);
   display: flex;
   flex-direction: column;
+  max-width: calc(var(--max-width) + calc(var(--margin) * 2));
+  margin: 0 auto;
 }
 
 #work h2 {
@@ -105,3 +107,4 @@
   align-items: baseline;
   display: flex;
 }
+
