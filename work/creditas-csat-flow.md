@@ -4,7 +4,7 @@ order: 2
 heading: Creditas
 subheading: Customer satisfaction across the payment journey
 tags: design, research
-thumb: https://placehold.co/640x640/f5f5ff/edecff/png
+thumb: assets/images/thumbs/creditas.png
 year: 2023
 status: published
 ---
