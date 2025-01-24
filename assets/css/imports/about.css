@@ -20,3 +20,42 @@
   margin-bottom: .25em;
   text-transform: uppercase;
 }
+
+#about ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about li {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em;
+}
+
+#about li + li {
+  border-top: 1px solid color-mix(in srgb, var(--color-paper) 20%, transparent 80%);
+}
+
+#about li h4 {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: .25em;
+} 
+
+#about li p {
+  margin: 0;
+} 
+
+#about .info {
+  width: 100%;
+}
+
+#about .period {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  text-transform: uppercase;
+}
