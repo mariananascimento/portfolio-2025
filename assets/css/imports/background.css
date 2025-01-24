@@ -24,7 +24,7 @@
   animation-direction: alternate;
   animation-duration: 25s;
   animation-iteration-count: infinite;
-  animation-name: rotate;
+  /* animation-name: rotate; */
   animation-timing-function: ease-in-out;
   backface-visibility: hidden;
   display: flex;
@@ -145,27 +145,27 @@
 @keyframes float {
   0% {
     scale: 1;
-    translate: calc(var(--radius) * 0);
+    translate: calc(var(--radius) * 0) calc(var(--radius) * 0.5);
   }
   20% {
     scale: 1.125;
-    translate: calc(var(--radius) * 0.5);
+    translate: calc(var(--radius) * 0.5) calc(var(--radius) * 1);
   }
   40% {
     scale: 1;
-    translate: calc(var(--radius) * 1);
+    translate: calc(var(--radius) * 1) calc(var(--radius) * 1.5);
   }
   60% {
     scale: 1.125;
-    translate: calc(var(--radius) * 1.5);
+    translate: calc(var(--radius) * 1.5) calc(var(--radius) * 0.5);
   }
   80% {
     scale: 1.25;
-    translate: calc(var(--radius) * 0.5);
+    translate: calc(var(--radius) * 0.5) calc(var(--radius) * 0);
   }
   100% {
     scale: 1;
-    translate: calc(var(--radius) * 0);
+    translate: calc(var(--radius) * 0) calc(var(--radius) * 0.5);
   }
 }
 
