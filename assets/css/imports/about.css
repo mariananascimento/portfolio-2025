@@ -1,0 +1,21 @@
+#about {
+  padding: var(--margin) 0;
+}
+
+#about h2 {
+  grid-column: span 12;
+  margin-block: var(--margin);
+}
+
+#about .grid > div {
+  grid-column: span 6;
+}
+
+#about h3 {
+  color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
