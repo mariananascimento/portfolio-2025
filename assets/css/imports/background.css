@@ -3,19 +3,22 @@
   background: var(--color-background);
   inset: 0;
   position: fixed;
+  transition: background-color .4s;
   z-index: 0;
 }
 
 .background::after {
   /* backdrop-filter: blur(calc(var(--radius) * 0.4)); */
   background-image: url(/assets/images/noise.png);
-  background-size: 288px;
+  background-size: calc(288px * 1);
   content: "";
   display: block;
   image-rendering: pixelated;
   inset: 0;
+  /* mix-blend-mode: soft-light; */
   pointer-events: none;
   position: fixed;
+  /* transition: opacity .4s; */
   z-index: 2;
 }
 
@@ -30,7 +33,9 @@
   display: flex;
   inset: 0;
   justify-content: center;
+  opacity: 1;
   position: fixed;
+  transition: opacity .4s;
   z-index: 1;
 }
 
@@ -176,4 +181,20 @@
   100% {
     rotate: 360deg;
   }
+}
+
+[data-theme="dark"] {
+
+  .background {
+    background: var(--color-dark-background);
+  }
+
+  .background::after {
+    mix-blend-mode: soft-light;
+  }
+
+  .circles {
+    opacity: .8;
+  }
+
 }

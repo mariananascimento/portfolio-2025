@@ -1,7 +1,6 @@
 const cursor = document.querySelector(".cursor")
 // const interactives = document.querySelectorAll('a, button')
 
-
 function color(name) {
   return `var(--color-${name})`
 }
@@ -70,3 +69,25 @@ document.onmouseleave = hideCursor
 // interactives.forEach( interactive => {
 //   document.onmouseenter = ()
 // })
+
+// Observer
+const about = document.querySelector("#about");
+
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-96px",
+};
+
+function handleIntersection(entries) {
+  const [entry] = entries;
+
+  if (entry.isIntersecting) {
+    document.body.dataset.theme = 'dark'
+  } else {
+    document.body.dataset.theme = 'light'
+  }
+}
+
+const sectionObserver = new IntersectionObserver(handleIntersection, options);
+sectionObserver.observe(about);

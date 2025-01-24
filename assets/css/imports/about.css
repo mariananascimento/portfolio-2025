@@ -1,4 +1,6 @@
 #about {
+  color: var(--color-paper);
+  min-height: 75vh;
   padding: var(--margin) 0;
 }
 
@@ -12,7 +14,6 @@
 }
 
 #about h3 {
-  color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
