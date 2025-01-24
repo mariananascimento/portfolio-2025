@@ -7,11 +7,12 @@
 }
 
 .background::after {
-  backdrop-filter: blur(calc(var(--radius) * 0.4));
+  /* backdrop-filter: blur(calc(var(--radius) * 0.4)); */
   background-image: url(/assets/images/noise.png);
   background-size: 288px;
   content: "";
   display: block;
+  image-rendering: pixelated;
   inset: 0;
   pointer-events: none;
   position: fixed;
@@ -37,11 +38,11 @@
   animation-iteration-count: infinite;
   aspect-ratio: 1;
   backface-visibility: hidden;
-  margin: calc(var(--radius) * -0.5);
+  margin: calc(var(--radius) * -1.3);
   mix-blend-mode: soft-light;
   opacity: 1;
   position: relative;
-  width: calc(var(--radius) * 2);
+  width: calc(var(--radius) * 3.6);
   z-index: 1;
 }
 
@@ -50,13 +51,14 @@
 }
 
 .circle::before {
+  /* transition: filter .8s; */
+  background-size: cover;
   border-radius: 50%;
   content: "";
   display: block;
   /* filter: blur(calc(var(--radius) * 0.4)); */
   inset: 0;
   position: absolute;
-  transition: filter .8s;
 }
 
 /* .circle:hover::before {
@@ -95,7 +97,8 @@
   animation-name: float;
 
   &::before {
-    background: var(--color-design);
+    /* background: var(--color-design); */
+    background-image: url(../../images/circle-design.png);
   }
 
   &::after {
@@ -109,7 +112,8 @@
   animation-name: float;
   
   &::before {
-    background: var(--color-research);
+    /* background: var(--color-research); */
+    background-image: url(../../images/circle-research.png);
   }
 
   &::after {
@@ -124,7 +128,8 @@
   animation-name: float;
 
   &::before {
-    background: var(--color-data);
+    /* background: var(--color-data); */
+    background-image: url(../../images/circle-data.png);
   }
 
   &::after {
