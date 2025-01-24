@@ -1,0 +1,20 @@
+<!-- Next -->
+{% assign works = site.pages | where: "layout", "case" | where: "status", "published" | sort: "order" %}    
+{% assign next = null %}
+
+{% for work in works %}
+  {% if work.order > page.order  %}
+    {% assign next = work %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if next == null %}
+  {% assign next = works | first %}
+{% endif %}
+
+<a href="{{ next.url }}">
+  Next Project<br>
+  <img src="../{{ next.thumb }}" width="200">
+  {{ next.heading }}: {{ next.subheading }}
+</a>
