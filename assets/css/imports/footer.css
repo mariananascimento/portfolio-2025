@@ -20,3 +20,24 @@ footer .grid > small {
   grid-column: span 12;
   margin-block: 4em 1em;
 }
+
+footer a[href^="mailto:"] span {
+  animation: rainbow 3s infinite;
+}
+
+footer small span {
+  animation: rainbow 3s infinite;
+  animation-delay: -1.5s;
+}
+
+@keyframes rainbow {
+  0%, 100% {
+    color: var(--color-design);
+  }
+  33.333% {
+    color: var(--color-research);
+  }
+  66.666% {
+    color: var(--color-data);
+  }
+}
