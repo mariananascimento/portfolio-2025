@@ -106,7 +106,17 @@ function handleChatIntersection(entries) {
 
 const chatObserver = new IntersectionObserver(handleChatIntersection, {
   root: null,
-  threshold: .5,
+  threshold: .1,
 });
 
 chatObserver.observe(chat);
+
+// Emoji reactions for Chat
+const messages = chat.querySelectorAll('.message');
+
+messages.forEach((message) => {
+  message.onclick = () => {
+    message.dataset.count++
+    // message.querySelector('.react');
+  }
+})

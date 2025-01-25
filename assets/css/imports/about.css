@@ -69,8 +69,8 @@
 }
 
 .chat {
-  height: 75vh;
-  overflow: auto;
+  /* height: 75vh;
+  overflow: auto; */
 }
 
 .chat .message {
@@ -78,15 +78,17 @@
   border-radius: 0 12px 12px 12px;
   color: var(--color-dark-background);
   font-size: 16px;
-  margin-block: 1em;
-  margin-inline: 16px 48px;
+  margin-block: 1.25em;
+  margin-inline: 16px 64px;
+  cursor: pointer;
   opacity: 0;
   padding: .75em .75em;
   position: relative;
   scale: .75;
-  text-wrap: balance;
+  text-wrap: pretty;
   transition: opacity .4s, translate .4s, scale .4s;
   translate: 0 1em;
+  user-select: none;
   width: fit-content;
 
   &::before {
@@ -102,6 +104,7 @@
 
   &:has(img) {
     width: 50%;
+    padding: .25em;
   }
 
   img {
@@ -142,3 +145,26 @@
     transition-delay: calc(8 * .2s);
   }
 }
+
+.chat .message[data-emoji]::after {
+  background: var(--color-paper);
+  border: 1px solid var(--color-dark-background);
+  border-radius: 999px;
+  bottom: 0;
+  content: attr(data-emoji) " " attr(data-count);
+  display: block;
+  padding: .125em .5em;
+  position: absolute;
+  right: 16px;
+  transition: opacity .2s, scale .2s;
+  translate: 0 50%;
+}
+
+.chat .message[data-emoji]:active::after {
+  scale: 1.2;
+}
+
+.chat .message[data-count="0"]::after {
+  opacity: 0;
+  scale: 0;
+} 
