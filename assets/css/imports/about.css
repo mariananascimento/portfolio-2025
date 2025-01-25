@@ -23,6 +23,7 @@
 
 #about ol {
   list-style-type: none;
+  margin-block: var(--margin);
   padding: 0;
 }
 
@@ -63,6 +64,6 @@
 #about .button {
   border: 1px solid currentColor;
   border-radius: 999px;
-  padding: .5em 1em;
   margin-block: 1em;
+  padding: .5em 1em;
 }
