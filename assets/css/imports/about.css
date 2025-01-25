@@ -110,34 +110,35 @@
     max-width: 100%;
   }
 
-  &:nth-child(1) {
-    transition-delay: calc(1 * .4s);
-  }
-  &:nth-child(2) {
-    transition-delay: calc(2 * .4s);
-  }
-  &:nth-child(3) {
-    transition-delay: calc(3 * .4s);
-  }
-  &:nth-child(4) {
-    transition-delay: calc(4 * .4s);
-  }
-  &:nth-child(5) {
-    transition-delay: calc(5 * .4s);
-  }
-  &:nth-child(6) {
-    transition-delay: calc(6 * .4s);
-  }
-  &:nth-child(7) {
-    transition-delay: calc(7 * .4s);
-  }
-  &:nth-child(8) {
-    transition-delay: calc(8 * .4s);
-  }
 }
 
 .chat.animate .message {
   opacity: 1;
   scale: 1;
   translate: 0 0;
+
+  &:nth-child(1) {
+    transition-delay: calc(1 * .2s);
+  }
+  &:nth-child(2) {
+    transition-delay: calc(2 * .2s);
+  }
+  &:nth-child(3) {
+    transition-delay: calc(3 * .2s);
+  }
+  &:nth-child(4) {
+    transition-delay: calc(4 * .2s);
+  }
+  &:nth-child(5) {
+    transition-delay: calc(5 * .2s);
+  }
+  &:nth-child(6) {
+    transition-delay: calc(6 * .2s);
+  }
+  &:nth-child(7) {
+    transition-delay: calc(7 * .2s);
+  }
+  &:nth-child(8) {
+    transition-delay: calc(8 * .2s);
+  }
 }
