@@ -71,16 +71,20 @@
 .chat {
   /* height: 75vh;
   overflow: auto; */
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 1.25em;
+  margin-block: 1.25em;
 }
 
 .chat .message {
   background: var(--color-paper);
   border-radius: 0 12px 12px 12px;
   color: var(--color-dark-background);
-  font-size: 16px;
-  margin-block: 1.25em;
-  margin-inline: 16px 64px;
   cursor: pointer;
+  /* margin-block: 1.25em; */
+  margin-inline: 16px 64px;
   opacity: 0;
   padding: .75em .75em;
   position: relative;
@@ -103,8 +107,8 @@
   }
 
   &:has(img) {
-    width: 50%;
     padding: .25em;
+    width: 50%;
   }
 
   img {
