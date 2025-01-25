@@ -70,16 +70,10 @@ document.onmouseleave = hideCursor
 //   document.onmouseenter = ()
 // })
 
-// Observer
+// Observer for About
 const about = document.querySelector("#about");
 
-const options = {
-  root: null,
-  threshold: 0,
-  rootMargin: "-96px",
-};
-
-function handleIntersection(entries) {
+function handleAboutIntersection(entries) {
   const [entry] = entries;
 
   if (entry.isIntersecting) {
@@ -89,5 +83,30 @@ function handleIntersection(entries) {
   }
 }
 
-const sectionObserver = new IntersectionObserver(handleIntersection, options);
-sectionObserver.observe(about);
+const aboutObserver = new IntersectionObserver(handleAboutIntersection, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-96px",
+});
+
+aboutObserver.observe(about);
+
+// Observer for Chat
+const chat = document.querySelector(".chat");
+
+function handleChatIntersection(entries) {
+  const [entry] = entries;
+
+  if (entry.isIntersecting) {
+    chat.classList.add('animate')
+  } else {
+    chat.classList.remove('animate')
+  }
+}
+
+const chatObserver = new IntersectionObserver(handleChatIntersection, {
+  root: null,
+  threshold: .5,
+});
+
+chatObserver.observe(chat);

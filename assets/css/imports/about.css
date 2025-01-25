@@ -67,3 +67,77 @@
   margin-block: 1em;
   padding: .5em 1em;
 }
+
+.chat {
+  height: 75vh;
+  overflow: auto;
+}
+
+.chat .message {
+  background: var(--color-paper);
+  border-radius: 0 12px 12px 12px;
+  color: var(--color-dark-background);
+  font-size: 16px;
+  margin-block: 1em;
+  margin-inline: 16px 48px;
+  opacity: 0;
+  padding: .75em .75em;
+  position: relative;
+  scale: .75;
+  text-wrap: balance;
+  transition: opacity .4s, translate .4s, scale .4s;
+  translate: 0 1em;
+  width: fit-content;
+
+  &::before {
+    background-image: url(../../images/balloon-tip.svg);
+    content: "";
+    display: block;
+    height: 16px;
+    left: -15.5px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+
+  &:has(img) {
+    width: 50%;
+  }
+
+  img {
+    border-radius: 8px;
+    display: block;
+    max-width: 100%;
+  }
+
+  &:nth-child(1) {
+    transition-delay: calc(1 * .4s);
+  }
+  &:nth-child(2) {
+    transition-delay: calc(2 * .4s);
+  }
+  &:nth-child(3) {
+    transition-delay: calc(3 * .4s);
+  }
+  &:nth-child(4) {
+    transition-delay: calc(4 * .4s);
+  }
+  &:nth-child(5) {
+    transition-delay: calc(5 * .4s);
+  }
+  &:nth-child(6) {
+    transition-delay: calc(6 * .4s);
+  }
+  &:nth-child(7) {
+    transition-delay: calc(7 * .4s);
+  }
+  &:nth-child(8) {
+    transition-delay: calc(8 * .4s);
+  }
+}
+
+.chat.animate .message {
+  opacity: 1;
+  scale: 1;
+  translate: 0 0;
+}
