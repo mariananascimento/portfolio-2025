@@ -30,6 +30,22 @@ footer small span {
   animation-delay: -1.5s;
 }
 
+footer .socials {
+  display: flex;
+  justify-content: end;
+}
+
+footer .socials a + a::before {
+  content: "•";
+  margin-right: .5em;
+  pointer-events: none;
+  color: color-mix(in srgb, var(--color-paper) 20%, transparent 80%);
+}
+
+footer .socials a + a {
+  margin-left: .5em
+}
+
 @keyframes rainbow {
   0%, 100% {
     color: var(--color-design);
