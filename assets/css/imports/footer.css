@@ -57,7 +57,7 @@ footer .socials a + a {
     color: var(--color-data);
   }
 }
-
+/* 
 [data-layout="case"] {
 
   footer {
@@ -72,4 +72,4 @@ footer .socials a + a {
     color: color-mix(in srgb, var(--color-tint) 20%, transparent 80%);
   }
 
-}
+} */

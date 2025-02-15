@@ -9,7 +9,7 @@
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="/assets/js/scripts.js" type="module"></script>
+    <script src="/assets/js/home.js" type="module"></script>
   </head>
   <body data-layout="{{ page.layout }}" data-theme="light">
 
@@ -19,8 +19,11 @@
       
       {% include cover.html %}
       {% include work.html %}
-      {% include about.html %}
-      {% include footer.html %}
+
+      <div id="dark">
+        {% include about.html %}
+        {% include footer.html %}
+      </div>
   
       <!-- <a href="#" data-tags="research">Research</a>
       <a href="#" data-tags="data">Data</a>

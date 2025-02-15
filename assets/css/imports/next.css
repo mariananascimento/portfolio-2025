@@ -1,0 +1,7 @@
+#next {
+  color: var(--color-paper);
+
+  img {
+    background-color: var(--color-paper);
+  }
+}

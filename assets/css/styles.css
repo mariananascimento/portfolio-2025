@@ -14,10 +14,10 @@
 @import url(imports/work.css);
 @import url(imports/about.css);
 @import url(imports/case.css);
+@import url(imports/next.css);
 @import url(imports/footer.css);
 @import url(imports/cursor.css);
 @import url(imports/responsive.css);
-
 
 /* a[data-tags] {
   padding: 2em 2em;

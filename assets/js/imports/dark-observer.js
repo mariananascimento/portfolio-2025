@@ -1,4 +1,4 @@
-const about = document.querySelector("#about")
+const dark = document.querySelector("#dark")
 
 function handleAboutIntersection(entries) {
   const [entry] = entries
@@ -10,10 +10,10 @@ function handleAboutIntersection(entries) {
   }
 }
 
-const aboutObserver = new IntersectionObserver(handleAboutIntersection, {
+const darkObserver = new IntersectionObserver(handleAboutIntersection, {
   root: null,
   threshold: 0,
   rootMargin: "-96px",
 })
 
-aboutObserver.observe(about)
+darkObserver.observe(dark)

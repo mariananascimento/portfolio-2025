@@ -1,7 +1,14 @@
 <div class="background">
   <div class="circles">
-    <div class="circle research" data-label="discovery" ></div>
-    <div class="circle design" data-label="design" ></div>
+    <!--
+    <div class="circle research" data-label="research"></div>
+    <div class="circle design" data-label="design"></div>
     <div class="circle data" data-label="data" ></div>
+    -->
+    {% assign tags_list = page.tags | split: "," %}
+
+    {% for tag in tags_list %}
+      <div class="circle {{ tag | strip }}" data-label="{{ tag | strip }}"></div>
+    {% endfor %}
   </div>
 </div>

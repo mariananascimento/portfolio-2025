@@ -8,41 +8,49 @@
     <title>{{ title }} • {{ site.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="/assets/js/scripts.js" type="module"></script>
+    <script src="/assets/js/case.js" type="module"></script>
   </head>
-  <body data-layout="{{ page.layout }}">
+  <body data-layout="{{ page.layout }}" data-theme="light">
 
-    {% include nav.html base="../../" %}
+    {% include background.html %}
+    <div class="foreground">
 
-    <article>
-      <header>
-        <h1 class="grid">
-          {{ page.heading }}
-        </h1>
-        <img src="../../{{ page.cover | default: page.thumb }}" alt="">
-      </header>
-      {% if page.password %}
-        {% include password-form.html %}
-        <div id="protected" hidden>
-      {% endif %}
-        
-      <div class="paper">
-        <p data-kicker="{{ page.heading }}">
-          {{ page.case-subheading | default: page.subheading }}
-        </p>
-        <div class="markdown grid">
-          {{ page.content | markdownify }}
+      {% include nav.html base="../../" %}
+
+      <article>
+        <header>
+          <h1 class="grid">
+            {{ page.heading }}
+          </h1>
+          <img src="../../{{ page.cover | default: page.thumb }}" alt="">
+        </header>
+        {% if page.password %}
+          {% include password-form.html %}
+          <div id="protected" hidden>
+        {% endif %}
+          
+        <div class="paper">
+          <p data-kicker="{{ page.heading }}">
+            {{ page.case-subheading | default: page.subheading }}
+          </p>
+          <div class="markdown grid">
+            {{ page.content | markdownify }}
+          </div>
         </div>
+
+        {% if page.password %}
+          </div>
+          {% include password-check.html %}
+        {% endif %}
+      </article>
+
+      <div id="dark">
+        {% include next.html %}
+        {% include footer.html %}
       </div>
 
-      {% if page.password %}
-        </div>
-        {% include password-check.html %}
-      {% endif %}
-    </article>
+    </div>
 
-    {% include next-project.html %}
-    {% include footer.html %}
     {% include cursor.html %}
   </body>
 </html>
