@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+
+  :root {
+    --margin: 32px;
+    --gutter: 16px;
+    --max-width: 960px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav .anchors {
+    font-size: 14px;
+    gap: 0;
+  }
+
+  .bits {
+    font-size: 14px;
+    text-wrap: balance;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  :root {
+    --margin: 24px;
+    --gutter: 12px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+  
+  header h1 {
+    text-wrap: balance;
+  }
+
+  .bits > a {
+    display: none;
+  }
+
+  #work li {
+    grid-column: span 12;
+  }
+
+  #work h2,
+  #about h2 {
+    margin-block: calc(var(--margin) * 2);
+  }
+
+  #work h3 span:first-child,
+  #work time {
+    font-size: 14px;
+  }
+
+  #work h3 span:last-child {
+    font-size: 16px;
+  }
+
+  #about .grid > div {
+    grid-column: span 12;
+    margin-bottom: 64px;
+  }
+
+  .chat .message {
+    margin-inline: 16px 16px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  :root {
+    --margin: 16px;
+    --gutter: 8px;
+  }
+
+  body,
+  #about .period,
+  .chat {
+    font-size: 14px;
+  }
+
+  nav .anchors {
+    font-size: 12px;
+  }
+
+  .bits {
+    font-size: 12px;
+  }
+
+  #work h3 small {
+    font-size: 10px;
+  }
+
+  #work h3 span:first-child,
+  #work time {
+    font-size: 12px;
+  }
+
+  #work h3 span:last-child {
+    font-size: 14px;
+  }
+
+}

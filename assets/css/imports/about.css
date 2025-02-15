@@ -66,6 +66,7 @@
   border-radius: 999px;
   margin-block: 1em;
   padding: .5em 1em;
+  white-space: nowrap;
 }
 
 .chat {

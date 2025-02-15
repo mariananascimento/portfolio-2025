@@ -2,8 +2,8 @@
   background: var(--color-paper);
   display: flex;
   flex-direction: column;
-  max-width: calc(var(--max-width) + calc(var(--margin) * 2));
   margin: 0 auto;
+  max-width: calc(var(--max-width) + calc(var(--margin) * 2));
 }
 
 #work h2 {
@@ -29,10 +29,10 @@
 }
 
 #work img {
-  margin-bottom: calc(var(--gutter) * .5);
-  width: 100%;
   aspect-ratio: 1;
   background-color: var(--color-paper);
+  margin-bottom: calc(var(--gutter) * .5);
+  width: 100%;
 }
 
 #work time {
@@ -82,6 +82,7 @@
 }
 
 #work h3 small {
+  align-self: baseline;
   background: var(--color-paper);
   border: 1px solid color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   border-radius: 4px;
@@ -89,7 +90,7 @@
   font-size: 12px;
   margin-inline: 1em;
   padding: .333em .5em .25em;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #work p {
