@@ -10,26 +10,29 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/scripts.js" type="module"></script>
   </head>
-  <body>
+  <body data-layout="{{ page.layout }}">
+
     {% include nav.html base="../../" %}
 
-    <h1>{{ page.heading }}</h1>
-    <p>{{ page.description }}</p>
+    <article>
+      <h1>{{ page.heading }}</h1>
+      <p>{{ page.description }}</p>
 
-    {% if page.password %}
-      {% include password-form.html %}
-      <div id="protected" hidden>
-    {% endif %}
-    
-    {{ page.content | markdownify }}
+      {% if page.password %}
+        {% include password-form.html %}
+        <div id="protected" hidden>
+      {% endif %}
+      
+      {{ page.content | markdownify }}
 
-    {% if page.password %}
-      </div>
-      {% include password-check.html %}
-    {% endif %}
+      {% if page.password %}
+        </div>
+        {% include password-check.html %}
+      {% endif %}
+    </article>
 
     {% include next-project.html %}
-
+    {% include footer.html %}
     {% include cursor.html %}
   </body>
 </html>
