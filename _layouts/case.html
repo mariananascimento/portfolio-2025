@@ -18,30 +18,32 @@
       {% include nav.html base="../../" %}
 
       <article>
+
         <header>
           <h1 class="grid">
             {{ page.heading }}
           </h1>
           <img src="../../{{ page.cover | default: page.thumb }}" alt="">
         </header>
-        {% if page.password %}
-          {% include password-form.html %}
-          <div id="protected" hidden>
-        {% endif %}
-          
-        <div class="paper">
-          <p data-kicker="{{ page.heading }}">
-            {{ page.case-subheading | default: page.subheading }}
-          </p>
-          <div class="markdown grid">
-            {{ page.content | markdownify }}
-          </div>
-        </div>
 
-        {% if page.password %}
-          </div>
-          {% include password-check.html %}
-        {% endif %}
+        <div class="paper">
+          {% if page.password %}
+            {% include password-form.html %}
+            <div id="protected" hidden>
+          {% endif %}
+          
+            <p data-kicker="{{ page.heading }}">
+              {{ page.case-subheading | default: page.subheading }}
+            </p>
+            <div class="markdown grid">
+              {{ page.content | markdownify }}
+            </div>
+        
+          {% if page.password %}
+            </div>
+            {% include password-check.html %}
+          {% endif %}
+        </div>
       </article>
 
       <div id="dark">
