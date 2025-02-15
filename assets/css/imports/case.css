@@ -1,0 +1,219 @@
+[data-layout="case"] {
+
+  h1 {
+    color: #bbb7da;
+    grid-template-columns: 1fr;
+    margin-block: var(--margin);
+    text-align: center;
+  }
+
+  header img {
+    display: block;
+    margin: 0 auto;
+    max-width: calc(var(--max-width) * .5);
+  }
+
+  .paper {
+    background: var(--color-paper);
+    display: flow-root;
+  }
+
+  #work h3 span:first-child {
+    /* opacity: .5; */
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+  }
+  
+  #work h3 span:last-child {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    /* opacity: .5; */
+  }
+
+  p[data-kicker] {
+    font-size: 24px;
+    font-weight: 500;
+    margin-block: calc(var(--margin) * 2);
+    text-align: center;
+  }
+
+  p[data-kicker]::before {
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    content: attr(data-kicker);
+    display: block;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: .25em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+.markdown.grid {
+
+  > * {
+    grid-column: span 12;
+  }
+
+  p {
+    margin-block: 0;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  hr {
+    grid-column: 4 / -4;
+  }
+
+  p:has(img),
+  hr + ul,
+  hr + ol,
+  > ul:first-child {
+    grid-column: 2 / -2;
+    margin-block: var(--gutter);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  h1 em,
+  h2 em,
+  h3 em,
+  h4 em,
+  h5 em,
+  h6 em {
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    display: block;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+  }
+
+  > ul:first-child {
+    border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%);
+    display: grid;
+    display: flex;
+    gap: calc(var(--gutter) * 2);
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    list-style: none;
+    padding-top: var(--margin);
+
+    > li {
+      color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: .25em;
+      text-transform: uppercase;
+
+      ul {
+        color: var(--color-tint);
+        font-size: 18px;
+        font-weight: 400;
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+        text-transform: initial;
+      }
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%);
+    display: block;
+    height: 0;
+    width: 100%;
+  }
+
+  hr:has(+ ul),
+  hr:has(+ ol) {
+    display: none;
+  }
+
+  hr + ul {
+    display: flex;
+    gap: var(--gutter);
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background: var(--color-subtle);
+      border-radius: 8px;
+      margin: 0;
+      padding: var(--gutter);
+      width: 100%;
+
+      em:first-child {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: .5em;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: custom-counter;
+    display: flex;
+    gap: var(--gutter);
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    > li {
+      counter-increment: custom-counter;
+      font-weight: 500;
+      margin: 0;
+      width: 100%;
+
+      &::before {
+        /* align-items: center; */
+        /* aspect-ratio: 1; */
+        /* border-top: 1px solid currentColor; */
+        /* background: var(--color-subtle); */
+        /* border-top: 1px solid currentColor; */
+        /* border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%); */
+        /* border-radius: 1000px; */
+        content: counter(custom-counter);
+        display: block;
+        font-family: 'DM Serif Display', serif;
+        font-size: var(--margin);
+        /* height: calc(var(--margin) * 1.5); */
+        /* justify-content: center; */
+        padding-block: .25em;
+        /* text-align: center; */
+        /* width: calc(var(--margin) * 1.5); */
+      }
+    }
+
+    ul {
+      font-size: .75em;
+      font-weight: 400;
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+}

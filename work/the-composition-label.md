@@ -3,8 +3,10 @@ layout: case
 order: 1
 heading: The Composition Label
 subheading: Fashion with eco-friendly fabrics
+case-subheading: Biodegradable Clothing Finder
 tags: design, data
 thumb: assets/images/thumbs/the-composition-label.png
+cover: assets/images/covers/the-composition-label.png
 year: 2024
 status: published
 ---
@@ -48,7 +50,6 @@ E nessas buscas eu cheguei a duas hipóteses: a primeira era que eu achava que p
 ---
 - *Desafio* Criar um site onde fosse possível filtrar as peças da SHEIN por composição de tecidos biodegradáveis.
 - *Oportunidade* Exibir dados de quantas de peças que são biodegradáveis e quanto tempo o usuário precisaria procurar no site para ter acesso a essas roupas.
----
 
 ## O Processo
 
