@@ -93,15 +93,21 @@ aboutObserver.observe(about);
 
 // Observer for Chat
 const chat = document.querySelector(".chat");
+let previousY = 0;
 
 function handleChatIntersection(entries) {
   const [entry] = entries;
+  const currentY = entry.boundingClientRect.y;
+  const direction = currentY < previousY ? "down" : "up";
 
   if (entry.isIntersecting) {
     chat.classList.add('animate')
-  } else {
+  } else if (direction === "up") {
+    // Hide only when scrolling up
     chat.classList.remove('animate')
   }
+
+  previousY = currentY;
 }
 
 const chatObserver = new IntersectionObserver(handleChatIntersection, {
