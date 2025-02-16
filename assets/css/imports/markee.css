@@ -1,0 +1,30 @@
+.markee {
+  bottom: 0;
+  color: var(--color-paper);
+  display: flex;
+  flex-shrink: 0;
+  font-family: 'DM Serif Display', serif;
+  font-size: calc(var(--margin)* 1.5);
+  left: 0;
+  max-width: 100%;
+  opacity: .5;
+  overflow-x: clip;
+  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+  z-index: -1;
+
+  span {
+  mix-blend-mode: multiply;
+  }
+}
+
+.markee .track {
+  animation: markee 10s infinite linear;
+}
+
+@keyframes markee {
+  to {
+    translate: calc(-100% / 10);
+  }
+}

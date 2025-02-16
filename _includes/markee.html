@@ -1,0 +1,11 @@
+<div class="markee" aria-hidden="true">
+  {% assign tags = page.tags | split: "," %}
+
+  <div class="track">
+    {% for i in (1..10) %}
+      {% for tag in tags %}
+        {{ tag | strip | capitalize }} ✹
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>

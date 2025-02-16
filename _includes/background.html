@@ -5,9 +5,9 @@
     <div class="circle design" data-label="design"></div>
     <div class="circle data" data-label="data" ></div>
     -->
-    {% assign tags_list = page.tags | split: "," %}
+    {% assign tags = page.tags | split: "," %}
 
-    {% for tag in tags_list %}
+    {% for tag in tags %}
       <div class="circle {{ tag | strip }}" data-label="{{ tag | strip }}"></div>
     {% endfor %}
   </div>
