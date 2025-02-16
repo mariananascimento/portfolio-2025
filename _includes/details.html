@@ -1,0 +1,21 @@
+{% if page.details %}
+
+<ul class="details">
+  {% for detail in page.details %}
+
+    {% assign key = detail[0] %}
+    {% assign items = detail[1] %}
+    
+    <li>
+      {{ key }}
+      <ul>
+        {% for item in items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    
+  {% endfor %}
+</ul>
+
+{% endif %}

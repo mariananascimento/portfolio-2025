@@ -1,0 +1,28 @@
+ul.details {
+  /* border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%); */
+  /* display: grid; */
+  display: flex;
+  gap: calc(var(--gutter) * 2);
+  /* grid-template-columns: repeat(12, 1fr); */
+  justify-content: start;
+  list-style: none;
+  padding: var(--margin) 0 0 0;
+
+  > li {
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    font-size: 16px;
+    font-weight: var(--font-weight-body);
+    margin-bottom: .25em;
+    text-transform: uppercase;
+
+    ul {
+      color: var(--color-tint);
+      font-size: 18px;
+      font-weight: var(--font-weight-head);
+      list-style: none;
+      margin-bottom: 0;
+      padding: 0;
+      text-transform: initial;
+    }
+  }
+}

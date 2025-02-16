@@ -10,16 +10,19 @@ cover: assets/images/covers/the-composition-label.png
 year: 2024
 status: published
 # password: abc123
+
+color: '#cfb6e6'
+
 ---
 
-* Timeline
+- Timeline
   - Jan, 2024
 
-* Disciplines
+- Disciplines
   - Design
   - Data
 
-* Responsibilities
+- Responsibilities
   - Data Analysis
   - Design Thinking
   - Wireframing

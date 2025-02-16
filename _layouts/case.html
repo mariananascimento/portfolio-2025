@@ -12,19 +12,32 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/case.js" type="module"></script>
   </head>
-  <body data-layout="{{ page.layout }}" data-theme="light">
+  <body data-layout="{{ page.layout }}" data-color="{{ page.color }}" data-theme="light">
 
     {% include nav.html base="../../" %}
 
     <article>
 
       <header id="header" {% if page.password %}hidden{% endif %}>
-        <h1 class="grid">
-          {{ page.heading }}
-        </h1>
+
+        <div class="grid">
+          <div>
+            <h1>
+              {{ page.heading }}
+              <span>{{ page.complement }}</span>
+            </h1>
+            {% include tags.html %}
+          </div>
+          <div>
+            <p class="description">
+              Est dapibus elit eu nec suspendisse nascetur faucibus parturient metus a parturient vestibulum a suspendisse vestibulum a orci pellentesque
+            </p>
+            {% include details.html %}
+          </div>
+        </div>
+
         <img src="../../{{ page.cover | default: page.thumb }}" alt="">
-        
-        {% include markee.html %}
+
       </header>
 
       <div class="paper">

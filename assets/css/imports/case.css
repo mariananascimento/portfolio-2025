@@ -1,18 +1,36 @@
-[data-layout="case"] {
+body[data-layout="case"] {
+  background: var(--color-subtle); 
 
   #dark {
     background: var(--color-dark-background);
   }
 
-  h1 {
-    color: #bbb7da;
+  header h1 {
+    /* color: #bbb7da; */
     grid-template-columns: 1fr;
     margin-block: var(--margin);
-    text-align: center;
+    /* text-align: center; */
+  }
+
+  header h1 span {
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    display: block;
   }
 
   header {
     position: relative;
+  }
+
+  header .grid {
+    align-items: baseline;
+  }
+
+  header .grid > div {
+    grid-column: span 6;
+  }
+
+  header p.description {
+    font-size: smaller;
   }
 
   header img {
