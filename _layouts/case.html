@@ -7,6 +7,8 @@
     {% assign title = page.title | default: page.heading %}
     <title>{{ title }} • {{ site.title }}</title>
 
+    {% include favicon.html %}
+
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/case.js" type="module"></script>
   </head>
