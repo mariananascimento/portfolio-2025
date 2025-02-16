@@ -57,19 +57,4 @@ footer .socials a + a {
     color: var(--color-data);
   }
 }
-/* 
-[data-layout="case"] {
 
-  footer {
-    color: var(--color-tint);
-  }
-  
-  footer .grid:first-of-type {
-    border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%);
-  }
-  
-  footer .socials a + a::before {
-    color: color-mix(in srgb, var(--color-tint) 20%, transparent 80%);
-  }
-
-} */

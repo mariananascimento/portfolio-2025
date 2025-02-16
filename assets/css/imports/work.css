@@ -41,13 +41,11 @@
   font-weight: 500;
   text-align: right;
   text-transform: uppercase;
-  /* width: 4rem; */
 }
 
 #work h3 {
   margin: 0;
   width: 100%;
-  /* width: calc(100% - 4rem); */
 }
 
 #work h3 span {
@@ -58,13 +56,10 @@
 #work h3 svg {
   align-self: center;
   display: inline-flex;
-  /* fill: color-mix(in srgb, var(--color-tint) 50%, transparent 50%); */
   margin-inline: .5em;
-  /* fill: var(--color-background); */
 }
 
 #work h3 span:first-child {
-  /* opacity: .5; */
   color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -77,8 +72,6 @@
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  /* text-transform: uppercase; */
-  /* opacity: .5; */
 }
 
 #work h3 small {
