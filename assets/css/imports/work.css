@@ -57,6 +57,7 @@
   align-self: center;
   display: inline-flex;
   margin-inline: .5em;
+  width: 16px;
 }
 
 #work h3 span:first-child {

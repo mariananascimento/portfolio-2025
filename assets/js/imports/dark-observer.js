@@ -13,7 +13,7 @@ function handleAboutIntersection(entries) {
 const darkObserver = new IntersectionObserver(handleAboutIntersection, {
   root: null,
   threshold: 0,
-  rootMargin: "-96px",
+  rootMargin: "-72px",
 })
 
 darkObserver.observe(dark)

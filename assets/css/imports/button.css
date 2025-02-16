@@ -1,0 +1,10 @@
+.button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-family: inherit;
+  margin-block: 1em;
+  padding: .5em 1em;
+  white-space: nowrap;
+}
