@@ -1,5 +1,9 @@
 [data-layout="case"] {
 
+  #dark {
+    background: var(--color-dark-background);
+  }
+
   h1 {
     color: #bbb7da;
     grid-template-columns: 1fr;
@@ -21,6 +25,7 @@
     background: var(--color-paper);
     display: flow-root;
     min-height: 100svh;
+    min-height: calc(100svh - var(--nav-height));
   }
 
   #work h3 span:first-child {
@@ -218,3 +223,4 @@
   }
 
 }
+

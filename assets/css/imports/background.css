@@ -7,7 +7,7 @@
   z-index: 0;
 }
 
-.background::after {
+/* .background::after {
   background-image: url(/assets/images/noise.png);
   background-size: calc(288px * 1);
   content: "";
@@ -17,7 +17,7 @@
   pointer-events: none;
   position: fixed;
   z-index: 2;
-}
+} */
 
 .circles {
   align-items: center;

@@ -12,47 +12,42 @@
   </head>
   <body data-layout="{{ page.layout }}" data-theme="light">
 
-    {% include background.html %}
-    <div class="foreground">
+    {% include nav.html base="../../" %}
 
-      {% include nav.html base="../../" %}
+    <article>
 
-      <article>
-
-        <header>
-          <h1 class="grid">
-            {{ page.heading }}
-          </h1>
-          <img src="../../{{ page.cover | default: page.thumb }}" alt="">
-          
-          {% include markee.html %}
-        </header>
-
-        <div class="paper">
-          {% if page.password %}
-            {% include password-form.html %}
-            <div id="protected" hidden>
-          {% endif %}
-          
-            <p data-kicker="{{ page.heading }}">
-              {{ page.case-subheading | default: page.subheading }}
-            </p>
-            <div class="markdown grid">
-              {{ page.content | markdownify }}
-            </div>
+      <header id="header" {% if page.password %}hidden{% endif %}>
+        <h1 class="grid">
+          {{ page.heading }}
+        </h1>
+        <img src="../../{{ page.cover | default: page.thumb }}" alt="">
         
-          {% if page.password %}
-            </div>
-            {% include password-check.html %}
-          {% endif %}
+        {% include markee.html %}
+      </header>
+
+      <div class="paper">
+        {% if page.password %}
+          {% include password-form.html %}
+          <div id="protected" hidden>
+        {% endif %}
+        
+        <p data-kicker="{{ page.heading }}">
+          {{ page.case-subheading | default: page.subheading }}
+        </p>
+        <div class="markdown grid">
+          {{ page.content | markdownify }}
         </div>
-      </article>
-
-      <div id="dark">
-        {% include next.html %}
-        {% include footer.html %}
+      
+        {% if page.password %}
+          </div>
+          {% include password-check.html %}
+        {% endif %}
       </div>
+    </article>
 
+    <div id="dark">
+      {% include next.html %}
+      {% include footer.html %}
     </div>
 
     {% include cursor.html %}
