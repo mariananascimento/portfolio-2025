@@ -10,4 +10,13 @@ year: 2023
 status: published
 ---
 
-Content
+* My Role
+  - UX Research
+  - UX Design
+* Team
+  - 1 Project Manager
+  - 1 Product Designer
+  - 5 Engineers
+* Year
+  - 2023
+
