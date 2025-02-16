@@ -1,6 +1,6 @@
 #next {
   color: var(--color-paper);
-  font-family: 'DM Serif Display', serif;
+  font-family: var(--font-family-head);
   font-size: calc(var(--margin) * 1.5);
   text-align: center;
 }

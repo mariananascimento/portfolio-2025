@@ -30,7 +30,7 @@
 
   #work h3 span:first-child {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
-    font-family: Inter, sans-serif;
+    font-family: var(--font-family-body);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: .25em;
@@ -38,7 +38,7 @@
   }
   
   #work h3 span:last-child {
-    font-family: Inter, sans-serif;
+    font-family: var(--font-family-body);
     font-size: 18px;
     font-weight: 500;
   }
@@ -54,7 +54,7 @@
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
     content: attr(data-kicker);
     display: block;
-    font-family: Inter, sans-serif;
+    font-family: var(--font-family-body);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: .25em;
@@ -109,7 +109,7 @@
   h6 em {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
     display: block;
-    font-family: Inter, sans-serif;
+    font-family: var(--font-family-body);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -199,7 +199,7 @@
       &::before {
         content: counter(custom-counter);
         display: block;
-        font-family: 'DM Serif Display', serif;
+        font-family: var(--font-family-head);
         font-size: var(--margin);
         padding-block: .25em;
       }

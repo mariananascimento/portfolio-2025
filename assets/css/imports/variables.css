@@ -19,6 +19,9 @@
 
   /* Fixed-size components */
   --nav-height: 96px;
+
+  --font-family-head: 'DM Serif Display', serif;
+  --font-family-body: 'Inter', sans-serif;
 }
 
 /* linear-gradient(in lab, #9CBCFc, #ff906c) */

@@ -14,7 +14,7 @@
 }
 
 #about h3 {
-  font-family: Inter, sans-serif;
+  font-family: var(--font-family-body);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: .25em;
@@ -39,7 +39,7 @@
 }
 
 #about li h4 {
-  font-family: Inter, sans-serif;
+  font-family: var(--font-family-body);
   font-size: 16px;
   font-weight: 500;
   margin: 0;
