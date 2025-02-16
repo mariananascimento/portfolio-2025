@@ -1,4 +1,6 @@
 <div class="background">
+
+  {% if page.layout == "home" %}
   <div class="circles">
     <!--
     <div class="circle research" data-label="research"></div>
@@ -11,4 +13,6 @@
       <div class="circle {{ tag | strip }}" data-label="{{ tag | strip }}"></div>
     {% endfor %}
   </div>
+  {% endif %}
+  
 </div>
