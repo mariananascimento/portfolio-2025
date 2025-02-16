@@ -6,6 +6,7 @@ body[data-layout="case"] {
   }
 
   header h1 {
+    font-size: 48px;
     /* color: #bbb7da; */
     grid-template-columns: 1fr;
     margin-block: var(--margin);

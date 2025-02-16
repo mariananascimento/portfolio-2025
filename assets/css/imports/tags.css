@@ -1,0 +1,56 @@
+[data-tag="design"] {
+  background: color-mix(in srgb, var(--color-design) 33%, transparent);
+  color: color-mix(in srgb, var(--color-design), var(--color-tint));
+}
+
+[data-tag="research"] {
+  background: color-mix(in srgb, var(--color-research) 33%, transparent);
+  color: color-mix(in srgb, var(--color-research), var(--color-tint));
+}
+
+[data-tag="data"] {
+  background: color-mix(in srgb, var(--color-data) 33%, transparent);
+  color: color-mix(in srgb, var(--color-data), var(--color-tint));
+}
+
+[data-layout="home"] {
+  .tags {
+    display: flex;
+    gap: calc(var(--gutter) * .5);
+    opacity: 0;
+    padding: .5em;
+    position: absolute;
+    top: 0;
+    transition: .4s;
+    translate: 0 -25%;
+  }
+
+  [data-tag] {
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: .25em .5em;
+  }
+
+  #work a:hover .tags {
+    opacity: 1;
+    translate: 0 0;
+    transition-delay: .4s;
+  }
+}
+
+[data-layout="case"] {
+  .tags {
+    display: flex;
+    gap: calc(var(--gutter) * .5);
+    padding-bottom: 1em;
+  }
+
+  [data-tag] {
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: .25em .5em;
+  }
+}
+
