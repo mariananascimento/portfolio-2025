@@ -1,1 +1,72 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:opsz,wght@14..32,400..700&display=swap);
+
+/**
+* @license
+*
+* Font Family: Cabinet Grotesk
+* Designed by: ITF
+* URL: https://www.fontshare.com/fonts/cabinet-grotesk
+* © 2025 Indian Type Foundry
+*
+* Cabinet Grotesk Thin 
+* Cabinet Grotesk Extralight 
+* Cabinet Grotesk Light 
+* Cabinet Grotesk Regular 
+* Cabinet Grotesk Medium 
+* Cabinet Grotesk Bold 
+* Cabinet Grotesk Extrabold 
+* Cabinet Grotesk Black 
+* Cabinet Grotesk Variable (Variable font)
+*/
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 100.0 to 900.0
+*/
+@font-face {
+  font-display: swap;
+  font-family: 'CabinetGrotesk-Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+}
+
+
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at https://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2025 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Type Forward
+ * License URL: https://www.fontspring.com/licenses/type-forward/webfont
+ *
+ *
+ */
+
+ @font-face {
+  font-family: 'oddvaltext-semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/oddvaltext-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/oddvaltext-semibold-webfont.woff') format('woff');
+}
+

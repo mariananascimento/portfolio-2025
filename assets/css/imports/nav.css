@@ -10,16 +10,17 @@ nav a {
 }
 
 nav > a {
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-head);
   font-weight: bold;
   grid-column: span 3;
+  letter-spacing: -.04em;
   margin-bottom: 0.125em;
   margin-left: calc(var(--gutter) * -.5);
 }
 
 nav .anchors {
   display: flex;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: var(--font-weight-body);
   gap: calc(var(--gutter) * .5);
   grid-column: span 9;
