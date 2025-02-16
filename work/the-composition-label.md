@@ -70,7 +70,7 @@ Então, em conjunto com o Vini – front end developer do projeto, fizemos uma r
 
 Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 
 ## *Define* Ideando uma solução
 
@@ -80,7 +80,7 @@ Então, em conjunto com o Vini – front end developer do projeto, fizemos uma r
 
 Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 
 ## *Develop* Entrega final
 
@@ -90,10 +90,10 @@ Então, em conjunto com o Vini – front end developer do projeto, fizemos uma r
 
 Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 
-![Caption here](https://placehold.co/1280x720/EDECFF/FFF "Alt here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")

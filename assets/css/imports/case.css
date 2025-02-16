@@ -58,6 +58,7 @@
 }
 
 .markdown.grid {
+  padding-bottom: calc(var(--margin) * 2);
 
   > * {
     grid-column: span 12;
@@ -214,6 +215,15 @@
       list-style: none;
       padding: 0;
     }
+  }
+
+  p[data-caption]::after {
+    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    content: attr(data-caption);
+    display: block;
+    font-size: smaller;
+    margin-block: var(--gutter);
+    text-align: center;
   }
 
 }
