@@ -1,4 +1,5 @@
 const cursor = document.querySelector(".cursor")
+const cursorColor = cursor.querySelector('.color')
 
 function color(name) {
   return `var(--color-${name})`
@@ -40,9 +41,12 @@ function setCursor(state, text = '') {
 }
 
 function colorCursor(tagsString) {
+
+  cursor.dataset.tags = tagsString ? true : false;
+
   if (!tagsString) {
-    cursor.style.backgroundColor = 'var(--color-background)'
-    cursor.style.backgroundImage = 'none'
+    cursorColor.style.backgroundColor = 'var(--color-background)'
+    cursorColor.style.backgroundImage = 'none'
     return
   }
 
@@ -50,8 +54,8 @@ function colorCursor(tagsString) {
 
   const [from, to] = tags
 
-  cursor.style.backgroundColor = color(from)
-  cursor.style.backgroundImage = to ? gradient(from,to) : 'none'
+  cursorColor.style.backgroundColor = color(from)
+  cursorColor.style.backgroundImage = to ? gradient(from,to) : 'none'
 }
 
 document.onmousemove = moveCursor
