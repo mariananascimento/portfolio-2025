@@ -1,7 +1,7 @@
 .bits {
   align-items: baseline;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-body);
   justify-content: space-between;
   padding-block: 24px 64px;
   position: relative;
@@ -24,5 +24,6 @@
 }
 
 .bits > a {
-  font-weight: 800;
+  font-weight: var(--font-weight-head);
+  font-weight: bold;
 }

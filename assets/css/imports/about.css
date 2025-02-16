@@ -16,7 +16,7 @@
 #about h3 {
   font-family: var(--font-family-body);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-body);
   margin-bottom: .25em;
   text-transform: uppercase;
 }
@@ -41,7 +41,7 @@
 #about li h4 {
   font-family: var(--font-family-body);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-body);
   margin: 0;
   margin-bottom: .25em;
 } 
@@ -56,9 +56,18 @@
 
 #about .period {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-body);
   text-align: right;
   text-transform: uppercase;
+}
+
+#about .button {
+  border-color: var(--color-paper);
+}
+
+#about .button:hover {
+  background: var(--color-paper);
+  color: var(--color-dark-background);
 }
 
 .chat {

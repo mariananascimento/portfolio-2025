@@ -22,6 +22,9 @@
 
   --font-family-head: 'DM Serif Display', serif;
   --font-family-body: 'Inter', sans-serif;
+
+  --font-weight-head: 500;
+  --font-weight-body: 500;
 }
 
 /* linear-gradient(in lab, #9CBCFc, #ff906c) */

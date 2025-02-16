@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:opsz,wght@14..32,100..900&display=swap);
-
+@import url(imports/fonts.css);
 @import url(imports/reset.css);
 @import url(imports/variables.css);
 @import url(imports/general.css);

@@ -32,7 +32,7 @@
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
     font-family: var(--font-family-body);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-body);
     margin-bottom: .25em;
     text-transform: uppercase;
   }
@@ -40,12 +40,12 @@
   #work h3 span:last-child {
     font-family: var(--font-family-body);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--font-weight-body);
   }
 
   p[data-kicker] {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: var(--font-weight-body);
     margin-block: calc(var(--margin) * 2);
     text-align: center;
   }
@@ -56,7 +56,7 @@
     display: block;
     font-family: var(--font-family-body);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-body);
     margin-bottom: .25em;
     text-align: center;
     text-transform: uppercase;
@@ -112,7 +112,7 @@
     font-family: var(--font-family-body);
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--font-weight-body);
     margin-bottom: .25em;
     text-transform: uppercase;
   }
@@ -130,14 +130,14 @@
     > li {
       color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
       font-size: 16px;
-      font-weight: 500;
+      font-weight: var(--font-weight-body);
       margin-bottom: .25em;
       text-transform: uppercase;
 
       ul {
         color: var(--color-tint);
         font-size: 18px;
-        font-weight: 400;
+        font-weight: var(--font-weight-head);
         list-style: none;
         margin-bottom: 0;
         padding: 0;
@@ -176,7 +176,7 @@
       em:first-child {
         display: block;
         font-style: normal;
-        font-weight: 500;
+        font-weight: var(--font-weight-body);
         margin-bottom: .5em;
       }
     }
@@ -192,7 +192,7 @@
 
     > li {
       counter-increment: custom-counter;
-      font-weight: 500;
+      font-weight: var(--font-weight-body);
       margin: 0;
       width: 100%;
 
@@ -207,7 +207,7 @@
 
     ul {
       font-size: .75em;
-      font-weight: 400;
+      font-weight: var(--font-weight-head);
       list-style: none;
       padding: 0;
     }

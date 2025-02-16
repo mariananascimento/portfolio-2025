@@ -9,7 +9,7 @@ thumb: assets/images/thumbs/the-composition-label.png
 cover: assets/images/covers/the-composition-label.png
 year: 2024
 status: published
-password: abc123
+# password: abc123
 ---
 
 * Timeline
