@@ -1,7 +1,25 @@
 #next {
   color: var(--color-paper);
+  font-family: 'DM Serif Display', serif;
+  font-size: calc(var(--margin) * 1.5);
+  text-align: center;
+}
 
-  img {
-    background-color: var(--color-paper);
-  }
+#next a {
+  display: inline-block;
+  margin: var(--margin);
+  padding: var(--margin);
+  user-select: none;
+}
+
+#next a::after {
+  content: "➼";
+  display: inline-block;
+  margin-left: .25em;
+  transition: translate .4s;
+  translate: 0% 5%;
+}
+
+#next a:hover::after {
+  translate: 25% 5%;
 }
