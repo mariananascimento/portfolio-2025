@@ -1,0 +1,5 @@
+.kicker,
+[data-kicker]::before {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}

@@ -21,7 +21,7 @@
                 <figcaption>
 
                   <h3>
-                    <span class="heading">
+                    <span class="heading kicker">
                       {{ page.heading }}
                       {% if page.password %}
                         {% include lock.svg %}
@@ -32,7 +32,7 @@
                     </span>
                   </h3>
 
-                  <time datetime="{{ page.year }}">
+                  <time datetime="{{ page.year }}" class="kicker">
                     {{ page.year }}
                   </time>
 
@@ -49,7 +49,7 @@
               <figcaption>
 
                 <h3>
-                  <span class="heading">
+                  <span class="heading kicker">
                     {{ page.heading }}
                     <small>soon</small>
                   </span>
@@ -58,7 +58,7 @@
                   </span>
                 </h3>
 
-                <time datetime="{{ page.year }}">
+                <time datetime="{{ page.year }}" class="kicker">
                   {{ page.year }}
                 </time>
               </figcaption>

@@ -19,7 +19,6 @@
   font-size: 20px;
   font-weight: var(--font-weight-body);
   margin-bottom: .25em;
-  text-transform: uppercase;
 }
 
 #about ol {
@@ -60,7 +59,6 @@
   font-size: 20px;
   font-weight: var(--font-weight-body);
   text-align: right;
-  text-transform: uppercase;
 }
 
 #about .button {

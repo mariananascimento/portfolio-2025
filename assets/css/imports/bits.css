@@ -5,7 +5,6 @@
   justify-content: space-between;
   padding-block: 24px 64px;
   position: relative;
-  text-transform: uppercase;
 }
 
 .bits::before {
@@ -19,11 +18,19 @@
   top: 0;
 }
 
+.bits svg {
+  width: 1em;
+}
+
 .bits p {
   margin: 0;
 }
 
 .bits > a {
+  align-items: center;
+  display: flex;
   font-weight: var(--font-weight-head);
   font-weight: bold;
+  gap: .25em;
+  width: fit-content;
 }

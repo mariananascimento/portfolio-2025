@@ -61,7 +61,7 @@
   position: absolute;
 }
 
-.circle::after {
+/* .circle::after {
   align-items: center;
   animation-direction: alternate-reverse;
   animation-duration: 25s;
@@ -81,11 +81,11 @@
   text-transform: uppercase;
   transition: opacity .4s;
   z-index: 3;
-}
+} */
 
-.circle:hover::after {
-  /* opacity: 1; */
-}
+/* .circle:hover::after {
+ 
+} */
 
 .circle.design {
   animation-direction: alternate;
@@ -96,9 +96,9 @@
     background-image: url(../../images/circle-design.png);
   }
 
-  &::after {
+  /* &::after {
     color: var(--color-design);
-  }
+  } */
 }
 
 .circle.research {
@@ -111,9 +111,9 @@
     background-image: url(../../images/circle-research.png);
   }
 
-  &::after {
+  /* &::after {
     color: var(--color-research);
-  }
+  } */
 }
 
 .circle.data {
@@ -127,9 +127,9 @@
     background-image: url(../../images/circle-data.png);
   }
 
-  &::after {
+  /* &::after {
     color: var(--color-data);
-  }
+  } */
 }
 
 .foreground {

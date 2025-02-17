@@ -14,7 +14,6 @@ ul.details {
     font-size: 16px;
     font-weight: var(--font-weight-body);
     margin-bottom: .25em;
-    text-transform: uppercase;
 
     ul {
       color: var(--color-tint);
