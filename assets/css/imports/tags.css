@@ -68,7 +68,7 @@
     gap: calc(var(--gutter) * .5);
     justify-content: end;
     opacity: 0;
-    padding: .5em;
+    padding: 1em;
     position: absolute;
     top: 0;
     transition: .4s;
