@@ -1,0 +1,5 @@
+<div class="socials">
+  {% for social in site.data.socials %}
+    <a href="{{ social.url }}" target="_blank">{{ social.label }}</a>
+  {% endfor %}
+</div>
