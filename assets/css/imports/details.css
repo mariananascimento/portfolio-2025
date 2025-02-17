@@ -17,11 +17,12 @@ ul.details {
 
   > li {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    color: var(--color-accent);
     font-size: 16px;
     font-weight: var(--font-weight-body);
     margin-bottom: .25em;
-    position: relative;
     min-width: 8em;
+    position: relative;
 
     + li {
       padding-left: var(--gutter);
