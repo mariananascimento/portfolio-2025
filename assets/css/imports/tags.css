@@ -1,16 +1,65 @@
+@keyframes twinkle {
+  0%, 100% {
+    scale: 1;
+    translate: 0 0;
+  }
+  25% {
+    translate: -25% 12.5%;
+  }
+  50% {
+    scale: .666;
+    translate: 0% 25%;
+  }
+  75% {
+    translate: 12.5% -12.5%;
+  }
+}
+
+[data-tag]::before {
+  animation: twinkle 3s infinite ease-in-out;
+  aspect-ratio: 1;
+  background: transparent;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  filter: blur(.25em);
+  margin-bottom: -.125em;
+  margin-right: .25em;
+  width: 1em;
+}
+
+
 [data-tag="design"] {
-  background: color-mix(in srgb, var(--color-design) 33%, transparent);
-  color: color-mix(in srgb, var(--color-design), var(--color-tint));
+  /* background: color-mix(in srgb, var(--color-design) 33%, transparent); */
+  /* border: 1px solid color-mix(in srgb, var(--color-design) 100%, transparent); */
+  color: color-mix(in srgb, var(--color-design) 100%, var(--color-tint));
+
+  &::before {
+    animation-delay: -0s;
+    background: var(--color-design);
+  }
 }
 
 [data-tag="research"] {
-  background: color-mix(in srgb, var(--color-research) 33%, transparent);
-  color: color-mix(in srgb, var(--color-research), var(--color-tint));
+  /* background: color-mix(in srgb, var(--color-research) 33%, transparent); */
+  /* border: 1px solid color-mix(in srgb, var(--color-research) 100%, transparent); */
+  color: color-mix(in srgb, var(--color-research) 100%, var(--color-tint));
+
+  &::before {
+    animation-delay: -.5s;
+    background: var(--color-research);
+  }
 }
 
 [data-tag="data"] {
-  background: color-mix(in srgb, var(--color-data) 33%, transparent);
-  color: color-mix(in srgb, var(--color-data), var(--color-tint));
+  /* background: color-mix(in srgb, var(--color-data) 33%, transparent); */
+  /* border: 1px solid color-mix(in srgb, var(--color-data) 80%, var(--color-tint)); */
+  color: color-mix(in srgb, var(--color-data) 80%, var(--color-tint));
+
+  &::before {
+    animation-delay: -1s;
+    background: var(--color-data);
+  }
 }
 
 [data-layout="home"] {
@@ -34,8 +83,8 @@
 
   #work a:hover .tags {
     opacity: 1;
-    translate: 0 0;
     transition-delay: .4s;
+    translate: 0 0;
   }
 }
 
