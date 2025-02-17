@@ -1,0 +1,21 @@
+<ol>
+  {% for xp in site.data.experience %}
+    <li>
+      <div class="role">
+        <h4>{{ xp.company }}</h4>
+        <p>{{ xp.role }}</p>
+      </div>
+      <div class="period kicker">
+        {% if xp.start and xp.end %}
+          <time datetime="{{ xp.start }}">{{ xp.start }}</time>
+          {% if xp.start != xp.end %}
+          - <time datetime="{{ xp.end }}">{{ xp.end }}</time>
+          {% endif %}
+        {% elsif xp.start %}
+          <!-- <time datetime="{{ xp.start }}">{{ xp.start }}</time> - -->
+          <time datetime="{{ 'now' | date: "%Y" }}">Current</time>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
