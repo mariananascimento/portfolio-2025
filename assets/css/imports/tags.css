@@ -66,6 +66,7 @@
   .tags {
     display: flex;
     gap: calc(var(--gutter) * .5);
+    justify-content: end;
     opacity: 0;
     padding: .5em;
     position: absolute;
@@ -92,6 +93,7 @@
   .tags {
     display: flex;
     gap: calc(var(--gutter) * .5);
+    justify-content: end;
     padding-bottom: 1em;
   }
 

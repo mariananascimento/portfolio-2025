@@ -24,19 +24,21 @@
           <div>
             <h1>
               {{ page.heading }}
-              <span>{{ page.complement }}</span>
+              <span>{{ page.case-subheading }}</span>
             </h1>
-            {% include tags.html %}
+            <p class="description">
+              Est dapibus elit eu nec suspendisse nascetur faucibus parturient metus a parturient
+            </p>
           </div>
           <div>
-            <p class="description">
-              Est dapibus elit eu nec suspendisse nascetur faucibus parturient metus a parturient vestibulum a suspendisse vestibulum a orci pellentesque
-            </p>
+            {% include tags.html %}
             {% include details.html %}
           </div>
         </div>
 
-        <img src="../../{{ page.cover | default: page.thumb }}" alt="">
+        <div class="cover-media">
+          <img src="../../{{ page.cover | default: page.thumb }}" alt="">
+        </div>
 
       </header>
 

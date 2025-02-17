@@ -4,9 +4,10 @@ ul.details {
   display: flex;
   gap: calc(var(--gutter) * 2);
   /* grid-template-columns: repeat(12, 1fr); */
-  justify-content: start;
+  justify-content: end;
   list-style: none;
-  padding: var(--margin) 0 0 0;
+  /* padding: var(--margin) 0 0 0; */
+  padding: 0;
 
   > li {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);

@@ -9,13 +9,24 @@ thumb: assets/images/thumbs/the-composition-label.png
 cover: assets/images/covers/the-composition-label.png
 year: 2024
 status: published
-# password: abc123
+# password: 
 
 color: '#cfb6e6'
 
+details:
+  My Role:
+    - UX Research
+    - UX Design
+  Team:
+    - Project Manager
+    - 1 Product Designer
+    - 5 Engineers
+  Year:
+    - 2023
+
 ---
 
-- Timeline
+<!-- - Timeline
   - Jan, 2024
 
 - Disciplines
@@ -36,7 +47,7 @@ color: '#cfb6e6'
   - Google Sheets
   - Figma
   - Python
-  - Svelte
+  - Svelte -->
 
 ## *Context* Filtrar uma roupa pode ser difícil
 

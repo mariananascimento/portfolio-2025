@@ -1,5 +1,7 @@
 body[data-layout="case"] {
-  background: var(--color-subtle); 
+  background: var(--color-subtle);
+  /* background-image: linear-gradient(180deg, transparent 50%, var(--color-paper) 50%);
+  background-attachment: fixed; */
 
   #dark {
     background: var(--color-dark-background);
@@ -16,6 +18,7 @@ body[data-layout="case"] {
   header h1 span {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
     display: block;
+    font-size: 32px;
   }
 
   header {
@@ -32,12 +35,26 @@ body[data-layout="case"] {
 
   header p.description {
     font-size: smaller;
+    max-width: 32ch;
   }
 
-  header img {
+  header .cover-media {
+    position: relative;
+
+    &::before {
+      background-color: var(--color-paper);
+      content: "";
+      display: block;
+      inset: 50% 0 0 0;
+      position: absolute;
+    }
+  }
+
+  header .cover-media img {
     display: block;
     margin: 0 auto;
     max-width: calc(var(--max-width) * .5);
+    position: relative;
   }
 
   .paper {
