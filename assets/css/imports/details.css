@@ -1,6 +1,6 @@
 ul.details {
   background: color-mix(in srgb, var(--color-background) 25%, transparent);
-  border: 1px solid var(--color-background);
+  /* border: 1px solid var(--color-background); */
   border-radius: 8px;
   /* border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%); */
   /* display: grid; */
