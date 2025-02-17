@@ -16,3 +16,13 @@
     width: 1em;
   }
 }
+
+/* .floating.next.button {
+  margin: 0;
+  padding: .5em;
+  position: absolute;
+  right: var(--margin);
+  rotate: -90deg;
+  top: 50%;
+  translate: 0 -50%;
+} */
