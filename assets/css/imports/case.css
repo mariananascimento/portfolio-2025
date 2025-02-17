@@ -1,24 +1,24 @@
 body[data-layout="case"] {
   background: var(--color-subtle);
-  /* background-image: linear-gradient(180deg, transparent 50%, var(--color-paper) 50%);
-  background-attachment: fixed; */
 
   #dark {
     background: var(--color-dark-background);
   }
 
   header h1 {
-    font-size: 48px;
-    /* color: #bbb7da; */
+    color: var(--color-accent);
+    /* font-size: 48px; */
     grid-template-columns: 1fr;
     margin-block: var(--margin);
-    /* text-align: center; */
+    text-align: center;
   }
 
   header h1 span {
-    color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
+    color: color-mix(in srgb, var(--color-accent) 100%, transparent);
     display: block;
+    font-family: var(--font-family-body);
     font-size: 32px;
+    letter-spacing: normal;
   }
 
   header {
@@ -30,7 +30,10 @@ body[data-layout="case"] {
   }
 
   header .grid > div {
-    grid-column: span 6;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
   }
 
   header p.description {
@@ -99,7 +102,7 @@ body[data-layout="case"] {
 }
 
 .markdown.grid {
-  padding-bottom: calc(var(--margin) * 2);
+  padding-block: calc(var(--margin) * 2);
 
   > * {
     grid-column: span 12;

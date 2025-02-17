@@ -4,8 +4,10 @@
   --color-data: #b2d3ff;
 
   --color-tint: #2b2222;
+  --color-accent: #9c97c6;
   --color-paper: #ffffff;
   --color-background: #edecff;
+
   --color-dark-background: #0e0d26;
   --color-subtle: color-mix(in srgb, var(--color-background), var(--color-paper)); 
   

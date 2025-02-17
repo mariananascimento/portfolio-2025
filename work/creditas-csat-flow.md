@@ -2,8 +2,8 @@
 layout: case
 order: 2
 heading: Creditas
-case-subheading: CSAT Flow
 subheading: Customer satisfaction across the payment journey
+case-subheading: Customer Satisfaction App Flow
 tags: design, research
 thumb: assets/images/thumbs/creditas.png
 cover: assets/images/covers/creditas.png

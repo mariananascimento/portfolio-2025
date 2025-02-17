@@ -22,18 +22,18 @@
 
         <div class="grid">
           <div>
+            {% include tags.html %}
             <h1>
               {{ page.heading }}
-              <span>{{ page.case-subheading }}</span>
+              <span>{{ page.case-subheading | default: page.subheading }}</span>
             </h1>
-            <p class="description">
+            <!-- <p class="description">
               Est dapibus elit eu nec suspendisse nascetur faucibus parturient metus a parturient
-            </p>
+            </p> -->
           </div>
-          <div>
-            {% include tags.html %}
+          <!-- <div>
             {% include details.html %}
-          </div>
+          </div> -->
         </div>
 
         <div class="cover-media">
@@ -48,9 +48,13 @@
           <div id="protected" hidden>
         {% endif %}
         
+        {% include details.html %}
+        
+        <!--
         <p data-kicker="{{ page.heading }}">
           {{ page.case-subheading | default: page.subheading }}
         </p>
+        -->
         <div class="markdown grid">
           {{ page.content | markdownify }}
         </div>
