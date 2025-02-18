@@ -4,7 +4,7 @@
   grid-template-columns: repeat(12, 1fr);
   margin: 0 var(--margin);
   max-width: var(--max-width);
-  width: calc(100% - calc(var(--margin) * 2));
   place-self: center;
+  width: calc(100% - calc(var(--margin) * 2));
 }
 

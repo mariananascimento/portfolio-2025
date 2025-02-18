@@ -7,7 +7,7 @@
 }
 
 #work h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   grid-column: span 12;
   margin-block: var(--margin);
 }
@@ -42,7 +42,7 @@
 
 #work time {
   color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   text-align: right;
   text-transform: uppercase;
@@ -62,13 +62,13 @@
   align-self: center;
   display: inline-flex;
   margin-inline: .5em;
-  width: 20px;
+  width: 2rem;
 }
 
 #work h3 span:first-child {
   color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
   font-family: var(--font-family-body);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   margin-bottom: .25em;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 
 #work h3 span:last-child {
   font-family: var(--font-family-body);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: var(--font-weight-body);
 }
 
@@ -84,9 +84,9 @@
   align-self: baseline;
   background: var(--color-paper);
   border: 1px solid color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
-  border-radius: 4px;
+  border-radius: .4rem;
   color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-inline: 1em;
   padding: .333em .5em .25em;
   white-space: nowrap;

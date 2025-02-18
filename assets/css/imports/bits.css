@@ -1,9 +1,9 @@
 .bits {
   align-items: baseline;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   justify-content: space-between;
-  padding-block: 24px 64px;
+  padding-block: 2.4rem 6.4rem;
   position: relative;
 }
 

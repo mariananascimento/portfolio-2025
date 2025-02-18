@@ -3,7 +3,7 @@
   appearance: none;
   background: transparent;
   border: 1px solid var(--color-tint);
-  border-radius: 999px;
+  border-radius: 100rem;
   display: flex;
   font-family: inherit;
   gap: .25em;

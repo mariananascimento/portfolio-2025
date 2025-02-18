@@ -87,8 +87,8 @@
   }
 
   [data-tag] {
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: .8rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     padding: .25em .5em;
   }
@@ -105,7 +105,7 @@
     animation: fadedown .4s backwards;
     animation-delay: .0s;
     background: var(--color-paper);
-    border-radius: 999px;
+    border-radius: 100rem;
     display: flex;
     gap: calc(var(--gutter) * .5);
     justify-content: end;
@@ -114,8 +114,8 @@
   }
 
   [data-tag] {
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: .8rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     padding: .25em .5em;
   }

@@ -20,7 +20,7 @@ nav > a {
 
 nav .anchors {
   display: flex;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   gap: calc(var(--gutter) * .5);
   grid-column: span 9;

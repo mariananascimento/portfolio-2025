@@ -12,15 +12,15 @@
   --color-subtle: color-mix(in srgb, var(--color-background), var(--color-paper)); 
   
   /* Blurred circles */
-  --radius: 240px;
+  --radius: 24rem;
 
   /* For 12 columns */
-  --margin: 48px;
-  --gutter: 24px;
-  --max-width: 1440px;
+  --margin: 4.8rem;
+  --gutter: 2.4rem;
+  --max-width: 144rem;
 
   /* Fixed-size components */
-  --nav-height: 96px;
+  --nav-height: 9.6rem;
 
   /* --font-family-head: 'DM Serif Display', serif; */
   /* --font-family-body: 'Inter', sans-serif; */

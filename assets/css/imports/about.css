@@ -5,7 +5,7 @@
 }
 
 #about h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   grid-column: span 12;
   margin-block: var(--margin);
 }
@@ -16,7 +16,7 @@
 
 #about h3 {
   font-family: var(--font-family-body);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   margin-bottom: .25em;
 }
@@ -40,14 +40,14 @@
 
 #about li h4 {
   font-family: var(--font-family-body);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   margin: 0;
   margin-bottom: .25em;
 } 
 
 #about li p {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 0;
 } 
 
@@ -56,7 +56,7 @@
 }
 
 #about .period {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--font-weight-body);
   text-align: right;
 }
@@ -75,18 +75,18 @@
   overflow: auto; */
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 2rem;
   gap: 1.25em;
   margin-block: 1.25em;
 }
 
 .chat .message {
   background: var(--color-paper);
-  border-radius: 0 12px 12px 12px;
+  border-radius: 0 1.2rem 1.2rem 1.2rem;
   color: var(--color-dark-background);
   cursor: pointer;
   /* margin-block: 1.25em; */
-  margin-inline: 16px 64px;
+  margin-inline: 1.6rem 6.4rem;
   opacity: 0;
   padding: .75em .75em;
   position: relative;
@@ -101,11 +101,11 @@
     background-image: url(../../images/balloon-tip.svg);
     content: "";
     display: block;
-    height: 16px;
-    left: -15.5px;
+    height: 1.6rem;
+    left: calc(calc(1.6rem * -1) + .5px);
     position: absolute;
     top: 0;
-    width: 16px;
+    width: 1.6rem;
   }
 
   &:has(img) {
@@ -114,7 +114,7 @@
   }
 
   img {
-    border-radius: 8px;
+    border-radius: .8rem;
     display: block;
     max-width: 100%;
   }
@@ -155,13 +155,13 @@
 .chat .message[data-emoji]::after {
   background: var(--color-paper);
   border: 1px solid var(--color-dark-background);
-  border-radius: 999px;
+  border-radius: 100rem;
   bottom: 0;
   content: attr(data-emoji) " " attr(data-count);
   display: block;
   padding: .125em .5em;
   position: absolute;
-  right: 16px;
+  right: 1.6rem;
   transition: opacity .2s, scale .2s;
   translate: 0 50%;
 }
