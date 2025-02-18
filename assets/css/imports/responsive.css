@@ -5,23 +5,28 @@
 }
 
 @media (max-width: 768px) {
+
+  html {
+    font-size: calc(100% * calc(6.666/16));
+  }
+
   :root {
     --margin: 3.2rem;
     --gutter: 1.6rem;
-    --max-width: 96rem;
+    /* --max-width: 96rem; */
   }
 
   body {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   nav .anchors {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     gap: 0;
   }
 
   .bits {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     text-wrap: balance;
   }
 
@@ -31,13 +36,17 @@
 }
 
 @media (max-width: 480px) {
-  :root {
+
+  html {
+    font-size: calc(100% * calc(5/16));
+  }
+  /* :root {
     --margin: 2.4rem;
     --gutter: 1.2rem;
-  }
+  } */
 
   body {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   
   header h1 {
@@ -59,11 +68,11 @@
 
   #work h3 span:first-child,
   #work time {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   #work h3 span:last-child {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
 
   #about .grid > div {
@@ -75,42 +84,47 @@
   }
 
   .chat .message:has(img) {
-    padding: .25em;
+    /* padding: .25em; */
     width: 75%;
   }
 }
 
 @media (max-width: 360px) {
-  :root {
+
+  html {
+    /* font-size: calc(100% * calc(4/16)); */
+  }
+
+  /* :root {
     --margin: 1.6rem;
     --gutter: .8rem;
-  }
+  } */
 
   body,
   #about .period,
   .chat {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   nav .anchors {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .bits {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   #work h3 small {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   #work h3 span:first-child,
   #work time {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   #work h3 span:last-child {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 }
 

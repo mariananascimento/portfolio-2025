@@ -155,7 +155,7 @@
 .chat .message[data-emoji]::after {
   background: var(--color-paper);
   border: 1px solid var(--color-dark-background);
-  border-radius: 100rem;
+  border-radius: 1000px;
   bottom: 0;
   content: attr(data-emoji) " " attr(data-count);
   display: block;
