@@ -1,5 +1,5 @@
 header h1 {
-  font-size: calc(var(--margin) * 1.5);
+  font-size: 7.2rem;
   grid-column: span 12;
   max-width: 20ch;
   text-wrap: pretty;
