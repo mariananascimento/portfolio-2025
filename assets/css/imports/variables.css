@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --color-design: #ff906c;
   --color-research: #ec75ff;
   --color-data: #b2d3ff;
@@ -22,14 +23,51 @@
   /* Fixed-size components */
   --nav-height: 9.6rem;
 
-  /* --font-family-head: 'DM Serif Display', serif; */
-  /* --font-family-body: 'Inter', sans-serif; */
-
+  /* Fonts */
   --font-family-head: 'oddvaltext-semibold', sans-serif;
   --font-family-body: 'CabinetGrotesk-Variable', sans-serif;
-
   --font-weight-head: 600;
   --font-weight-body: 500;
+
+  /* Sizes */
+
+  /* 0–10 */
+  --size-1: 1px;
+  --size-2: 2px;
+  --size-4: .4rem;
+  --size-6: .6rem; /* Not used */
+  --size-8: .8rem;
+  --size-10: 1rem;
+
+  /* 10–20 */
+  --size-12: 1.2rem;
+  --size-14: 1.4rem;
+  --size-16: 1.6rem;
+  --size-18: 1.8rem;
+  --size-20: 2rem;
+
+  /* 20–100 */
+  --size-24: 2.4rem;
+  --size-32: 3.2rem;
+  --size-48: 4.8rem;
+  --size-64: 6.4rem;
+  --size-72: 7.2rem;
+  --size-96: 9.6rem;
+
+  /* 100–1000 */
+  --size-240: 24rem;
+  --size-320: 32rem; /* Not used */
+  --size-480: 48rem; /* Not used */
+  --size-640: 64rem; /* Not used */
+  --size-720: 72rem; /* Not used */
+  --size-960: 96rem;
+
+  /* 100rem; 1000  Remove */
+
+  /* 1000–2000 */
+  --size-1280: 128rem;
+  --size-1440: 144rem;
+  --size-1920: 192rem; /* Not used */
 }
 
 /* linear-gradient(in lab, #9CBCFc, #ff906c) */
