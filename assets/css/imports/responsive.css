@@ -6,14 +6,13 @@
 
 @media (max-width: 768px) {
   html {
-    font-size: calc(100% * calc(6.666/16));
+    font-size: calc(100% * calc(7/16));
   }
 
   :root {
     --margin: 3.2rem;
     --gutter: 1.6rem;
   }
-
 
   header h1 {
     font-size: 6.4rem;
@@ -35,7 +34,7 @@
 
 @media (max-width: 480px) {
   html {
-    font-size: calc(100% * calc(6/16));
+    font-size: calc(100% * calc(6.666/16));
   }
 
   :root {
@@ -70,6 +69,12 @@
 
   .chat .message:has(img) {
     width: 75%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: calc(100% * calc(6/16));
   }
 }
 
