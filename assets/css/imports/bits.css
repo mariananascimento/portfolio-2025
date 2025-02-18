@@ -22,6 +22,11 @@
   width: 1em;
 }
 
+.bits > div {
+  display: flex;
+  gap: calc(var(--gutter) * 2);
+}
+
 .bits p {
   margin: 0;
 }
