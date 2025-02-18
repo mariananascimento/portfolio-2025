@@ -6,7 +6,7 @@
 
 @media (max-width: 768px) {
   html {
-    font-size: calc(100% * calc(7/16));
+    font-size: calc(100% * calc(6.666/16));
   }
 
   :root {
