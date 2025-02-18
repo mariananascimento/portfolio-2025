@@ -4,8 +4,9 @@
 
 html {
   background: var(--color-background);
+  /* font-size: 62.5%; */
+  font-size: calc(100% * calc(10/16));
   scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
 body {
