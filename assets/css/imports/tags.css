@@ -93,10 +93,12 @@
     padding: .25em .5em;
   }
 
-  #work a:hover .tags {
-    opacity: 1;
-    transition-delay: .4s;
-    translate: 0 0;
+  @media (hover: hover) {
+    #work a:hover .tags {
+      opacity: 1;
+      transition-delay: .4s;
+      translate: 0 0;
+    }
   }
 }
 

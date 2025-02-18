@@ -76,5 +76,12 @@
 @media (hover: none) {
   .cursor {
     display: none;
-  } 
+  }
+  
+  #work a.hover .tags {
+    opacity: 1;
+    transition-delay: .4s;
+    translate: 0 0;
+  }
  }
+
