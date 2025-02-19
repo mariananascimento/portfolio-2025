@@ -4,6 +4,30 @@
   }
 }
 
+@media (max-width: 960px) {
+  .markdown.grid {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    hr {
+      grid-column: 2 / -2;
+    }
+
+    p:has(img),
+    hr + ul,
+    hr + ol,
+    > ul:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: calc(100% * calc(7/16));
@@ -33,6 +57,28 @@
 
   #about .grid > div {
     grid-column: span 12;
+  }
+
+  .markdown.grid {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    hr {
+      grid-column: 1 / -1;
+    }
+
+    p:has(img),
+    hr + ul,
+    hr + ol,
+    > ul:first-child {
+      grid-column: 1 / -1;
+    }
   }
 }
 

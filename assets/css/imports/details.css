@@ -18,7 +18,7 @@ ul.details {
   > li {
     color: color-mix(in srgb, var(--color-tint) 50%, var(--color-paper) 50%);
     color: var(--color-accent);
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-body);
     margin-bottom: .25em;
     min-width: 8em;
@@ -40,7 +40,7 @@ ul.details {
 
     ul {
       color: var(--color-tint);
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: var(--font-weight-head);
       list-style: none;
       margin-bottom: 0;

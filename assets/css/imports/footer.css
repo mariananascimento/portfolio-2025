@@ -17,6 +17,7 @@ footer .grid > div:last-child {
 }
 
 footer .grid > small {
+  font-size: 2rem;
   grid-column: span 12;
   margin-block: 4em 1em;
 }
