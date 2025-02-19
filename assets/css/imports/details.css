@@ -1,16 +1,11 @@
 ul.details {
   background: color-mix(in srgb, var(--color-background) 25%, transparent);
-  /* border: 1px solid var(--color-background); */
   border-radius: .8rem;
-  /* border-top: 1px solid color-mix(in srgb, var(--color-tint) 20%, transparent 80%); */
-  /* display: grid; */
   display: flex;
   gap: var(--gutter);
-  /* grid-template-columns: repeat(12, 1fr); */
   justify-content: center;
   list-style: none;
   margin: calc(var(--margin) * 2) auto 0; 
-  /* padding: var(--margin) 0 0 0; */
   padding: var(--gutter);
   place-self: center;
   width: fit-content;

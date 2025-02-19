@@ -7,13 +7,20 @@ https://stackoverflow.com/questions/57630086/css-active-in-ios
   
   {% for message in site.data.chat %}
     <div class="message" data-emoji="{{ message.emoji }}" data-count="{{ message.count }}" ontouchstart>
-
       {% if message.text %}
         {{ message.text }}
       {% elsif message.image %}
         <img src="{{ message.image }}" alt="">
       {% endif %}
-
     </div>
   {% endfor%}
+
+  <style>
+    {% for message in site.data.chat %}
+      {% assign delay = forloop.index | times: 0.2 %}
+      .chat .message:nth-child({{ forloop.index }}) {
+        transition-delay: {{ delay }}s;
+      }
+    {% endfor %}
+  </style>
 </div>
