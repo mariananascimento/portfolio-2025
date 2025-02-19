@@ -19,6 +19,10 @@
     text-wrap: balance;
   }
 
+  body[data-layout="case"] header .cover-media img {
+    width: 100%;
+  }
+
   nav .anchors {
     gap: 0;
   }
