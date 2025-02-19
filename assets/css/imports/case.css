@@ -285,5 +285,26 @@ body[data-layout="case"] {
     text-align: center;
   }
 
+  > p:last-child a:first-child:last-child {
+    align-items: center;
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--color-tint);
+    border-radius: 1000px;
+    display: flex;
+    font-family: inherit;
+    gap: .25em;
+    margin-block: 1em;
+    padding: .5em 1em;
+    place-self: center;
+    white-space: nowrap;
+    width: fit-content;
+
+    &:hover {
+      background: var(--color-tint);
+      color: var(--color-paper);
+    }
+  }
+
 }
 
