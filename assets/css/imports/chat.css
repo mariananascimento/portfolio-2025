@@ -20,10 +20,17 @@
   position: relative;
   scale: .75;
   text-wrap: pretty;
+  transform-origin: top left;
   transition: opacity .4s, translate .4s, scale .4s;
   translate: 0 1em;
   user-select: none;
   width: fit-content;
+
+  &.animate {
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
 
   &::before {
     background-image: url(../../images/balloon-tip.svg);
@@ -49,36 +56,13 @@
 
 }
 
+/* 
 .chat.animate .message {
   opacity: 1;
   scale: 1;
   translate: 0 0;
-
-  &:nth-child(1) {
-    transition-delay: calc(1 * .2s);
-  }
-  &:nth-child(2) {
-    transition-delay: calc(2 * .2s);
-  }
-  &:nth-child(3) {
-    transition-delay: calc(3 * .2s);
-  }
-  &:nth-child(4) {
-    transition-delay: calc(4 * .2s);
-  }
-  &:nth-child(5) {
-    transition-delay: calc(5 * .2s);
-  }
-  &:nth-child(6) {
-    transition-delay: calc(6 * .2s);
-  }
-  &:nth-child(7) {
-    transition-delay: calc(7 * .2s);
-  }
-  &:nth-child(8) {
-    transition-delay: calc(8 * .2s);
-  }
 }
+*/
 
 .chat .message[data-emoji]::after {
   background: var(--color-paper);
