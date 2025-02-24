@@ -3,7 +3,7 @@ const wrappers = document.querySelectorAll(".message-wrapper");
 wrappers.forEach( function(wrapper) {
   const options = {
     root: null,
-    rootMargin: '0% 0% -5% 0%',
+    rootMargin: '5% 0% -5% 0%',
     threshold: 1,
   }
 
@@ -18,7 +18,7 @@ wrappers.forEach( function(wrapper) {
 
     if (entry.isIntersecting) {
       message.classList.add('animate')
-    } else if (direction === "up") {
+    } else /*if (direction === "up")*/ {
       message.classList.remove('animate')
     }
 
