@@ -4,6 +4,7 @@ footer {
 }
 
 footer .grid:first-of-type {
+  align-items: baseline;
   border-top: 1px solid color-mix(in srgb, var(--color-paper) 20%, transparent 80%);
   padding-block: var(--margin);
 }
@@ -20,6 +21,10 @@ footer .grid > small {
   font-size: 2rem;
   grid-column: span 12;
   margin-block: 4em 1em;
+}
+
+footer a[href^="mailto:"] {
+  font-size: 3.2rem;
 }
 
 footer a[href^="mailto:"] span {
