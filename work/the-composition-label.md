@@ -88,7 +88,7 @@ The challenge was to create an experience where it would be possible to filter S
 
 ## Process
 
-## *Discover* Searching for answers
+### *Discover* Searching for answers
 
 Considering my hypotheses, I decided to go after answers. With a website that has approximately 600,000 items for sale (according to the BBC - incluir dado), it became unfeasible to analyze all the clothes, so I needed a sample that would represent the whole. In this case, I selected a base from the 'Best-Selling Women's Clothes – Tops, Blouses, and T-shirts' page. I chose this segment because, although SHEIN didn't release a report on the best-selling items, I analyzed which pieces appeared most frequently as 'Best-Selling' and concluded that it was women's tops.
 
@@ -96,7 +96,7 @@ So, together with Vini (front-end developer), we did a scraping of the sample. A
 
 ![Alt here](../assets/images/cases/placeholder.svg "Caption here")
 
-## *Define* Brainstorming a solution
+### *Define* Brainstorming a solution
 
 So, with relevant data in hand, it was now time to think of a solution. My objectives were to make it easier to find these biodegradable pieces and to bring a reflection on the data used, such as insights into how SHEIN produces its clothes and how difficult it is to access natural pieces.
 
@@ -104,7 +104,7 @@ So, I decided to create a website like a composition label, where it would be po
 
 ![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Low fidelity wireframe made in Figma of the current website")
 
-## *Develop* Final delivery
+### *Develop* Final delivery
 
 ![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 

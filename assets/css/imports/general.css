@@ -35,7 +35,12 @@ h1, h2 {
 }
 
 p {
+  color: color-mix(in srgb, var(--color-tint) 75%, transparent);
   cursor: default;
+
+  & strong {
+      font-weight: var(--font-weight-body-strong);
+  }
 }
 
 a {
