@@ -6,7 +6,7 @@ subheading: Enhancing the Rewards program experience
 tags: design, research
 thumb: assets/images/thumbs/rewards-nubank.png
 year: 2020
-status: published
+status: hidden # coming soon
 ---
 
 Content

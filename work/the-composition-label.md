@@ -15,12 +15,14 @@ color: '#cfb6e6'
 
 details:
   My Role:
-    - UX Research
-    - UX Design
-  Team:
-    - Project Manager
-    - 1 Product Designer
-    - 5 Engineers
+    - Product Designer
+    - UX Researcher
+  Tools:
+    - Google Sheets
+    - Figma
+  Collaborators:
+    - Mariana Nascimento
+    - Vinicius Sueiro
   Year:
     - 2023
 
@@ -49,26 +51,31 @@ details:
   - Python
   - Svelte -->
 
-## *Context* Filtrar uma roupa pode ser difícil
 
-Eu sempre gostei de comprar roupas na SHEIN. 
-É uma forma de comprar peças diferentes por um preço acessível, porém uma coisa sempre me incomodou ao comprar essas roupas: o material.
+## Context
 
-Para ter um preço barato, as roupas da SHEIN não tem uma durabilidade longa, depois de algumas lavagens a peça tá cheia de bolinhas ou desbotadas. Assim, eu tomei a decisão de mudar meu guarda-roupa.
+I've always liked buying clothes from SHEIN. It's a way to buy different pieces at an affordable price, but one thing has always bothered me when buying these clothes: the material.
 
-Em busca de peças mais frescas e duradouras, eu procurei por roupas mais naturais no site e foi ai que percebi que não conseguia filtrar corretamente. Nem o site e nem o aplicativo mostra um filtro dedicado a composição das roupas. Eles deixam filtrar por material, mas sem sempre o material e a composição é a mesma coisa. 
+To keep the price low, SHEIN's clothes don't have long durability. After a few washes, the item gets full of pills or faded. So, I made the decision to change my wardrobe.
 
-A verdade é que a SHEIN tem um catálogo tão extenso e a categorização ficou um pouco perdida com o passar do tempo, mas também pude perceber que era difícil de achar materiais naturais, já que existia muitas peças de poliéster.
+## Problem
 
-E nessas buscas eu cheguei a duas hipóteses: a primeira era que eu achava que pelo menos uns 90% das roupas da SHEIN eram feitas por derivados de plástico – poliéster, poliamida e etc., e a segunda era que a empresa não parecia muito disposta a mostrar peças de materiais naturais, já que sua grande maioria não era feita destes materiais.
+In search of fresher and more durable pieces, I looked for more natural clothes on the website, and that's when I realized I couldn't filter correctly. Neither the website nor the app showed a filter dedicated to the composition of the clothes. They allow filtering by material, but the material and composition aren't always the same thing.
 
+The truth is that SHEIN has such an extensive catalog, and the categorization has gotten a bit lost over time, but I also noticed that it was hard to find natural materials, as there were many polyester pieces.
+
+And in these searches, I came up with **two hypotheses**: the first was that I thought **at least 90% of the clothes from SHEIN were made from plastic derivatives** – polyester, polyamide, etc., and the second was that **the company didn’t seem very willing to showcase pieces made from natural materials**, as the vast majority weren't made from these materials.
+
+## Goals
+The challenge was to create an experience where it would be possible to filter SHEIN pieces by the composition of biodegradable fabrics. Additionally, as an opportunity, display data on the number of biodegradable pieces and the time the user would need to search for these clothes on the website.
+
+<!-- - 
 ---
 - *Desafio* Criar um site onde fosse possível filtrar as peças da SHEIN por composição de tecidos biodegradáveis.
 - *Oportunidade* Exibir dados de quantas de peças que são biodegradáveis e quanto tempo o usuário precisaria procurar no site para ter acesso a essas roupas.
+-->
 
-## O Processo
-
-1. Discover
+<!-- - 1. Discover
   - Identify Problem
   - Data Analysis
 1. Define
@@ -77,39 +84,27 @@ E nessas buscas eu cheguei a duas hipóteses: a primeira era que eu achava que p
 1. Develop
   - Final Design
 
-## *Discover* Indo atrás de respostas
+-->
 
-Considerando minhas hipóteses, eu resolvi ir atrás de respostas. Com um site com mais de aproximadamente 600.000 items à venda (de acordo com a BBC) se tornava inviável fazer a análise de todas as roupas, então eu precisava de uma amostra que representasse o todo. Nesse caso, selecionei uma base da página ”Mais vendidas de Roupas Femininas – top, blusas e camisetas”. Escolhi esse segmento, pois embora a SHEIN não divulgasse o relatório de peças mais vendidas, eu analisei quais eram as peças que mais apareciam como ”Mais vendidas” e conclui que era parte superior feminina.
+## Process
 
-Então, em conjunto com o Vini – front end developer do projeto, fizemos uma raspagem do site usando Selenium. Após ter acesso ao .csv, exportei para o Google Sheets e xxxx
+## *Discover* Searching for answers
 
-Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
+Considering my hypotheses, I decided to go after answers. With a website that has approximately 600,000 items for sale (according to the BBC - incluir dado), it became unfeasible to analyze all the clothes, so I needed a sample that would represent the whole. In this case, I selected a base from the 'Best-Selling Women's Clothes – Tops, Blouses, and T-shirts' page. I chose this segment because, although SHEIN didn't release a report on the best-selling items, I analyzed which pieces appeared most frequently as 'Best-Selling' and concluded that it was women's tops.
 
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
+So, together with Vini (front-end developer), we did a scraping of the sample. After having access to the .csv file, I exported it to Google Sheets.
 
-## *Define* Ideando uma solução
+![Alt here](../assets/images/cases/placeholder.svg "Caption here")
 
-(trocar texto) Considerando minhas hipóteses, eu resolvi ir atrás de respostas. Com um site com mais de aproximadamente 600.000 items à venda (de acordo com a BBC) se tornava inviável fazer a análise de todas as roupas, então eu precisava de uma amostra que representasse o todo. Nesse caso, selecionei uma base da página ”Mais vendidas de Roupas Femininas – top, blusas e camisetas”. Escolhi esse segmento, pois embora a SHEIN não divulgasse o relatório de peças mais vendidas, eu analisei quais eram as peças que mais apareciam como ”Mais vendidas” e conclui que era parte superior feminina.
+## *Define* Brainstorming a solution
 
-Então, em conjunto com o Vini – front end developer do projeto, fizemos uma raspagem do site usando Svelte. Após ter acesso ao .csv, exportei para o Google Sheets e xxxx
+So, with relevant data in hand, it was now time to think of a solution. My objectives were to make it easier to find these biodegradable pieces and to bring a reflection on the data used, such as insights into how SHEIN produces its clothes and how difficult it is to access natural pieces.
 
-Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
+So, I decided to create a website like a composition label, where it would be possible to filter clothes by specific materials, as well as provide general data about their compositions.
 
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
+![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Low fidelity wireframe made in Figma of the current website")
 
-## *Develop* Entrega final
-
-(trocar texto) Considerando minhas hipóteses, eu resolvi ir atrás de respostas. Com um site com mais de aproximadamente 600.000 items à venda (de acordo com a BBC) se tornava inviável fazer a análise de todas as roupas, então eu precisava de uma amostra que representasse o todo. Nesse caso, selecionei uma base da página ”Mais vendidas de Roupas Femininas – top, blusas e camisetas”. Escolhi esse segmento, pois embora a SHEIN não divulgasse o relatório de peças mais vendidas, eu analisei quais eram as peças que mais apareciam como ”Mais vendidas” e conclui que era parte superior feminina.
-
-Então, em conjunto com o Vini – front end developer do projeto, fizemos uma raspagem do site usando Svelte. Após ter acesso ao .csv, exportei para o Google Sheets e xxxx
-
-Após extrair essa base, limpar dados inconsistentes e tratar, consegui chegar a conclusão de como a SHEIN produz suas peças.
-
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
-
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
-
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
+## *Develop* Final delivery
 
 ![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
 

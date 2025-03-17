@@ -6,7 +6,7 @@ subheading: Stages a movie must go through to win a category
 tags: design, data
 thumb: assets/images/thumbs/oscars.png
 year: 2024
-status: coming soon
+status: hidden # coming soon
 ---
 
 Content
