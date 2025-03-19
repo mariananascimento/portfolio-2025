@@ -94,7 +94,15 @@ Considering my hypotheses, I decided to go after answers. With a website that ha
 
 So, together with Vini (front-end developer), we did a scraping of the sample. After having access to the .csv file, I exported it to Google Sheets.
 
-![Alt here](../assets/images/cases/placeholder.svg "Caption here")
+### Sample analyzed
+
+After accessing the data on the pieces, I was able to confirm some of my hypotheses and other curiosities: **Over 90% of the clothes are made of polyester.**
+
+Additionally, I noticed that it was more common to find a blend of materials, so to be more precise, **95% of the clothes are made of a combination of polyester and elastane.**
+
+It's so difficult to find a biodegradable piece on the website that **a user would normally take about 2 hours to find just 8 items.**
+
+![Alt here](../assets/images/cases/sheets-composition.png "screenshot of sheets based on the sample analysis")
 
 ### *Define* Brainstorming a solution
 
@@ -102,10 +110,16 @@ So, with relevant data in hand, it was now time to think of a solution. My objec
 
 So, I decided to create a website like a composition label, where it would be possible to filter clothes by specific materials, as well as provide general data about their compositions.
 
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Low fidelity wireframe made in Figma of the current website")
+![Alt here](../assets/images/cases/composition-wireframe.png "low fidelity wireframe made in Figma of the current website")
 
 ### *Develop* Final delivery
 
-![Alt here](https://placehold.co/1280x720/EDECFF/FFF "Caption here")
+![Alt here](../assets/images/cases/the-composition-01.png "animation of tags being cut")
+
+![Alt here](../assets/images/cases/the-composition-02.png "filters where you can see only clothes made from natural fabrics")
+
+![Alt here](../assets/images/cases/the-composition-03.png "analyzed sample data indicating how many pieces there are of each composition")
+
+![Alt here](../assets/images/cases/the-composition-04.png "analyzed sample data indicating how long it takes to find natural pieces on the Shein website")
 
 [Check it live](https://thecompositionlabel.com/)
