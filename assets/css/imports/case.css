@@ -301,6 +301,7 @@ body[data-layout="case"] {
       display: block;
       font-size: 2rem;
       margin-bottom: calc(2 * var(--gutter));
+      padding-inline: calc(2* var(--gutter));
       text-align: center;
     }
   }
