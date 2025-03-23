@@ -55,7 +55,7 @@ We had **72% of people disapproving the journey**, with comments like: “very
 <!-- ![Alt here](../assets/images/cases/csat-flow.png ) -->
 
 <video autoplay muted loop playsinline>
-  <source src="../assets/images/cases/csat-flow.mp4" type="video/mp4">
+  <source src="../assets/images/cases/csat-flow-lavender.mp4" type="video/mp4">
 </video>
 
 ## Takeaways

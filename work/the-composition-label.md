@@ -69,6 +69,11 @@ And in these searches, I came up with **two hypotheses**: the first was that I t
 ## Goals
 The challenge was to create an experience where it would be possible to filter SHEIN pieces by the composition of biodegradable fabrics. Additionally, as an opportunity, display data on the number of biodegradable pieces and the time the user would need to search for these clothes on the website.
 
+<!-- <video autoplay muted loop playsinline>
+  <source src="../assets/images/cases/the-composition.mp4" type="video/mp4">
+</video> -->
+
+
 <!-- - 
 ---
 - *Desafio* Criar um site onde fosse possível filtrar as peças da SHEIN por composição de tecidos biodegradáveis.
