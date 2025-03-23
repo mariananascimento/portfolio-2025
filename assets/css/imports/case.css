@@ -144,6 +144,7 @@ body[data-layout="case"] {
   }
 
   p:has(img),
+  video,
   hr + ul,
   hr + ol,
   > ul:first-child {
@@ -156,6 +157,15 @@ body[data-layout="case"] {
   img {
     display: block;
     max-width: 100%;
+  }
+
+  video {
+    background: var(--color-subtle);
+    display: block;
+    max-height: 70vh;
+    max-width: 100%;
+    padding: var(--margin);
+    width: 100%;
   }
 
   h1 {

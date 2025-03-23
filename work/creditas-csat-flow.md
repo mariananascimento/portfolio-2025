@@ -52,11 +52,11 @@ We had **22% responses that disapproved the experience**, with comments like: �
 In case of the users who did not complete the payment journey, we only had **28% of approval**, with comments such as: “very good”, “practical to get the payment slip without having to talk to anyone” and “the app is getting simpler every day”.
 We had **72% of people disapproving the journey**, with comments like: “very high interest rates”, “abusive interest rates”, “need a discount on payment”, “very difficult to find what I need”, “trying to negotiate and not being attended to”, “not loading the payment slip and need to request it through WhatsApp”. 
 
-![Alt here](../assets/images/cases/csat-flow.png )
+<!-- ![Alt here](../assets/images/cases/csat-flow.png ) -->
 
-<!-- <video autoplay muted loop playsinline style="aspect-ratio: 1/2">
-   <source src="https://itsmemari.com/assets/csat-flow.mp4" type="video/mp4">
-</video> -->
+<video autoplay muted loop playsinline>
+  <source src="../assets/images/cases/csat-flow.mp4" type="video/mp4">
+</video>
 
 ## Takeaways
 According to our initial hypothesis, one of the reasons for the drop on the due date selection screen is the amount to be paid being too high due to the interest rate. Users tend to simulate payment, but give up before completing the process.
