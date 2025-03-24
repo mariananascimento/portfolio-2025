@@ -2,7 +2,7 @@
 layout: case
 order: 6
 heading: Work & Co
-subheading: Elevating financial health through bank's save money buckets
+subheading: Elevating financial health through bank's bank savings buckets
 tags: design
 thumb: assets/images/thumbs/work-and-co.png
 year: 2021

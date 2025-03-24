@@ -119,12 +119,8 @@ So, I decided to create a website like a composition label, where it would be po
 
 ### *Develop* Final delivery
 
-![Alt here](../assets/images/cases/the-composition-01.png "animation of tags being cut")
-
-![Alt here](../assets/images/cases/the-composition-02.png "filters where you can see only clothes made from natural fabrics")
-
-![Alt here](../assets/images/cases/the-composition-03.png "analyzed sample data indicating how many pieces there are of each composition")
-
-![Alt here](../assets/images/cases/the-composition-04.png "analyzed sample data indicating how long it takes to find natural pieces on the Shein website")
+<video autoplay muted loop playsinline>
+  <source src="../assets/images/cases/composition-final.mp4" type="video/mp4">
+</video>
 
 [Check it live](https://thecompositionlabel.com/)
