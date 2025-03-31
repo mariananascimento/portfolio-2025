@@ -46,7 +46,7 @@ I selected a few customers’ comments who asked why their credit card limit wa
 - **If it’s negative, why this information shows in green color?**
 - **Why is the label “available limit” since it's negative?**
 
-![Alt here](../assets/images/cases/limit-comments.png "comments screenshots")
+![Nubank comments screenshots](../assets/images/cases/limit-comments.png "Comments screenshots")
 
 
 ## *Define* Research: Scenarios
@@ -73,7 +73,7 @@ Similar to temp limit, the limit stays above the permanent for a set amount of t
 ### Negative limit for Rewards program
 When the customer limit is below normal, and there is a charge for the Rewards program subscription, the limit becomes negative.
 
-## *Define* Problem
+## Problem
 After I did the secondary research and understand the scenarios that existed for the limit to go negative, I was able to come to the conclusion that **the problem was that customers couldn’t understand their limit because we didn't explain it at any time it and the graphic elements used in the application were confusing.** Therefore, it was necessary to list some hypotheses to direct an idea.
 
 ## *Develop* Hypothesis
@@ -85,9 +85,9 @@ Customers don't understand why it's negative, as there is no explanation of why 
 ### Content
 By changing the text from “Limit available” to another title that is more neural (eg “Limit value"), we can make it easier to understand.
 
-![Alt here](../assets/images/cases/limit-old.png "old screens")
+![Nubank old screens](../assets/images/cases/limit-old.png "Old screens")
 
-## *Develop* Solution
+## Solution
 From the hypotheses raised, I created the following solutions:
 Changed the color green to grey. At first, I thought of using red, but it was already being used to indicate a closed bill.
 
@@ -98,7 +98,7 @@ We have included a page in the FAQ page dedicated to including the reasons. At f
 ## *Deploy* Results
 After implementing the above changes, we continued to follow on the same channels and **didn’t get any more questions about this topic**. We understand that the changes applied met what we were looking for at that time, but that in the future new improvements could be applied.
 
-![Alt here](../assets/images/cases/limit-new.png "new screens")
+![Nubank new screens](../assets/images/cases/limit-new.png "New screens")
 
 ## Takeaways
 The routine of a digital product that is already in progress is quite different than a new product that has not yet gone live. Some professionals have already worked on the team you are working and they didn’t always predict (because we can't predict everything!) all the possible problems.

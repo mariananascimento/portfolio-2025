@@ -115,7 +115,7 @@ So, with relevant data in hand, it was now time to think of a solution. My objec
 
 I decided to create a website inspired by clothing composition labels, where users could filter garments by specific materials and access general data about fabric compositions.
 
-![Alt here](../assets/images/cases/composition-wireframe.png "Low fidelity wireframe made in Figma of the current website")
+![Low fidelity wireframe made in Figma of the current website](../assets/images/cases/composition-wireframe.png "Low fidelity wireframe made in Figma of the current website")
 
 ### *Deliver* Final delivery
 

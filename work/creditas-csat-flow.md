@@ -42,7 +42,7 @@ To avoid overwhelming users, the survey would only appear for the same user **ev
 
 
 
-![Alt here](../assets/images/cases/csat-img-grande.jpg)
+![Creditas mockup images](../assets/images/cases/csat-img-grande.jpg)
 
 ## Results
 After a month of research, we gathered **574 responses**: 
