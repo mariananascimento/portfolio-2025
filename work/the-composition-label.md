@@ -99,7 +99,7 @@ Considering my hypotheses, I decided to go after answers. With a website that ha
 
 Together with Vini (front-end developer), we scraped data from the selected sample. After obtaining the .csv file, I exported it to Google Sheets for analysis.
 
-### Sample analyzed
+### *Define* Sample analyzed
 
 After reviewing the data, I was able to confirm some of my hypotheses and uncover additional insights: **Over 90% of the clothes are made of polyester.**
 
@@ -109,7 +109,7 @@ Finding biodegradable pieces was extremely difficult—on average, a user would 
 
 ![screenshot of sheets based on the sample analysis](../assets/images/cases/sheets-composition.png "Screenshot of sheets based on the sample analysis")
 
-### *Define* Brainstorming a solution
+### *Develop* Brainstorming a solution
 
 So, with relevant data in hand, it was now time to think of a solution. My objectives were to make it easier to find these biodegradable pieces and to bring a reflection on the data used, such as insights into how SHEIN produces its clothes and how difficult it is to access natural pieces.
 
@@ -117,7 +117,7 @@ I decided to create a website inspired by clothing composition labels, where use
 
 ![Alt here](../assets/images/cases/composition-wireframe.png "Low fidelity wireframe made in Figma of the current website")
 
-### *Develop* Final delivery
+### *Deliver* Final delivery
 
 <video autoplay muted loop playsinline>
   <source src="../assets/images/cases/composition-final.mp4" type="video/mp4">

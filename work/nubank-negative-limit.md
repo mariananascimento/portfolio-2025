@@ -76,7 +76,7 @@ When the customer limit is below normal, and there is a charge for the Rewards p
 ## *Define* Problem
 After I did the secondary research and understand the scenarios that existed for the limit to go negative, I was able to come to the conclusion that **the problem was that customers couldn’t understand their limit because we didn't explain it at any time it and the graphic elements used in the application were confusing.** Therefore, it was necessary to list some hypotheses to direct an idea.
 
-## *Define* Hypothesis
+## *Develop* Hypothesis
 ### Experience
 The color green refers to a positive limit. Switching to another color, such as red, will remove the impression that it is a possible limit to use.
 
@@ -95,7 +95,7 @@ Added a button that only appeared when the limit became negative to explain why.
 
 We have included a page in the FAQ page dedicated to including the reasons. At first, I'd like to display the exact reason, but that would add complexity and take longer to implement, so I ended up deciding to go with the simpler path.
 
-## *Develop* Results
+## *Deploy* Results
 After implementing the above changes, we continued to follow on the same channels and **didn’t get any more questions about this topic**. We understand that the changes applied met what we were looking for at that time, but that in the future new improvements could be applied.
 
 ![Alt here](../assets/images/cases/limit-new.png "new screens")
