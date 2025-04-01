@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="{{ page.case-subheading | default: page.subheading }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta property="og:image" content="{{ "/assets/images/og.png" | absolute_url }}" />
+    
     {% assign title = page.heading %}
     <title>{{ title }} • {{ site.title }}</title>
 
