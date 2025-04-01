@@ -21,7 +21,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -1
+  z-index: 1;
 }
 
 
@@ -39,7 +39,7 @@
   text-wrap: balance;
   transform-origin: top left;
   transition: opacity .4s, translate .4s, scale .4s;
-  translate: 0 1em;
+  translate: -1em 1em;
   user-select: none;
   width: fit-content;
   z-index: 2;
@@ -82,26 +82,31 @@
 }
 */
 
-.chat .message[data-emoji]::after {
+.chat .message span {
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.chat .balloon[data-emoji]::after {
   background: var(--color-paper);
   border: 1px solid var(--color-dark-background);
   border-radius: 1000px;
   bottom: 0;
   content: attr(data-emoji) " " attr(data-count);
   display: block;
-  left: 1.6rem;
   padding: .125em .5em;
   position: absolute;
-  /* right: 1.6rem; */
+  right: 1.6rem;
   transition: opacity .2s, scale .2s;
   translate: 0 50%;
 }
 
-.chat .message[data-emoji]:active::after {
+.chat .balloon[data-emoji]:active::after {
   scale: 1.2;
 }
 
-.chat .message[data-count="0"]::after {
+.chat .balloon[data-count="0"]::after {
   opacity: 0;
   scale: 0;
 } 

@@ -8,13 +8,14 @@ https://stackoverflow.com/questions/57630086/css-active-in-ios
   {% for message in site.data.chat %}
     <div class="message-wrapper">
 
-      <div class="message" data-emoji="{{ message.emoji }}" data-count="{{ message.count }}" ontouchstart>
-        <div class="balloon"></div>
+      <div class="message">
+        <div class="balloon" data-emoji="{{ message.emoji }}" data-count="{{ message.count }}" ontouchstart></div>
         {% if message.text %}
           <span>{{ message.text }}</span>
         {% elsif message.image %}
           <img src="{{ message.image }}" alt="">
         {% endif %}
+
       </div>
     </div>
   {% endfor%}
