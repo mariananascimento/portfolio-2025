@@ -11,12 +11,8 @@ wrappers.forEach( function(wrapper) {
 
   const handleWrapperIntersection = (entries) => {
     const [entry] = entries
-
-    console.log(entry);
-
     const currentY = entry.boundingClientRect.y
     const direction = currentY < previousY ? "down" : "up"
-
     const message = entry.target.querySelector('.message');
 
     if (entry.isIntersecting) {

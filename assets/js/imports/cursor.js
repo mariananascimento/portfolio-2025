@@ -51,7 +51,6 @@ function colorCursor(tagsString) {
   }
 
   const tags = tagsString.split(',').map(tag => tag.trim())
-
   const [from, to] = tags
 
   cursorColor.style.backgroundColor = color(from)
