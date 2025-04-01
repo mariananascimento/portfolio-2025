@@ -9,5 +9,3 @@ year: 2021
 status: published
 password: abc123
 ---
-
-Password-protected *content*
