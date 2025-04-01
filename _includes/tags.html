@@ -1,8 +1,11 @@
 <div class="tags" aria-hidden="true">
-  {% assign tags = page.tags | split: "," %}
+  {% assign tags = include.tags | default: page.tags | split: "," %}
+
   {% for tag in tags %}
     <div data-tag="{{ tag | strip | downcase }}">
-      {{ tag | strip | capitalize }}
+      {% unless include.tags %}
+        {{ tag | strip | capitalize }}
+      {% endunless %}
     </div>
   {% endfor %}
 </div>

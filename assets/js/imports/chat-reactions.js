@@ -1,7 +1,7 @@
-const messages = document.querySelectorAll('.message')
+const balloons = document.querySelectorAll('.balloon')
 
-messages.forEach((message) => {
-  message.onclick = () => {
-    message.dataset.count++
+balloons.forEach((balloon) => {
+  balloon.onclick = () => {
+    balloon.dataset.count++
   }
 })

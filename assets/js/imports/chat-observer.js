@@ -13,8 +13,7 @@ wrappers.forEach( function(wrapper) {
     const [entry] = entries
     const currentY = entry.boundingClientRect.y
     const direction = currentY < previousY ? "down" : "up"
-
-    const message = entry.target.firstElementChild;
+    const message = entry.target.querySelector('.message');
 
     if (entry.isIntersecting) {
       message.classList.add('animate')

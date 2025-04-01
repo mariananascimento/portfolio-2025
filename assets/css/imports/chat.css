@@ -8,23 +8,41 @@
   margin-block: 1.25em;
 }
 
-.chat .message {
+/* .chat .message-wrapper {
+  position: relative;
+} */
+
+.chat .message .balloon {
+  background: red;
   background: var(--color-paper);
   border-radius: 0 1.2rem 1.2rem 1.2rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.chat .message {
   color: var(--color-dark-background);
   cursor: pointer;
-  /* margin-block: 1.25em; */
   margin-inline: 1.6rem 6.4rem;
   opacity: 0;
   padding: .75em .75em;
   position: relative;
+  position: relative;
   scale: .75;
+  scale: 1;
   text-wrap: pretty;
+  text-wrap: balance;
   transform-origin: top left;
   transition: opacity .4s, translate .4s, scale .4s;
-  translate: 0 1em;
+  translate: -1em 1em;
   user-select: none;
   width: fit-content;
+  z-index: 2;
 
   &.animate {
     opacity: 1;
@@ -64,7 +82,13 @@
 }
 */
 
-.chat .message[data-emoji]::after {
+.chat .message span {
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.chat .balloon[data-emoji]::after {
   background: var(--color-paper);
   border: 1px solid var(--color-dark-background);
   border-radius: 1000px;
@@ -78,11 +102,11 @@
   translate: 0 50%;
 }
 
-.chat .message[data-emoji]:active::after {
+.chat .balloon[data-emoji]:active::after {
   scale: 1.2;
 }
 
-.chat .message[data-count="0"]::after {
+.chat .balloon[data-count="0"]::after {
   opacity: 0;
   scale: 0;
 } 
