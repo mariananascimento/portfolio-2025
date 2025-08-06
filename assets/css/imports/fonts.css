@@ -65,7 +65,7 @@
  @font-face {
   font-family: 'oddvaltext-semibold';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   src: url('../fonts/oddvaltext-semibold-webfont.woff2') format('woff2'),
        url('../fonts/oddvaltext-semibold-webfont.woff') format('woff');
 }
